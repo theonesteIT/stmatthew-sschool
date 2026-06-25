@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -19,234 +19,77 @@
       }
     };
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <link rel="stylesheet" href="css/site.css" />
+  <script src="js/include-fallback.js"></script>
 </head>
-<body class="antialiased">
+<body class="antialiased" data-page="contact">
 <link rel="preload" as="image" href="assets/st-logo.png"/>
 <div class="font-sans text-[#1F2937] bg-[#F5F7FA] min-h-screen overflow-x-hidden">
-<nav class="fixed top-0 w-full z-50 transition-all duration-500 bg-[#0A2A66] shadow-2xl shadow-[#0A2A66]/40 py-2">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-<a href="index.html" class="flex items-center gap-3 group">
-<div class="relative w-16 h-16">
-<div class="w-16 h-16 rounded-xl bg-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform p-1">
-<img src="assets/st-logo.png" alt="ST Matthew&#x27;s School logo" class="w-full h-full object-contain"/>
+<div id="site-header"></div>
+<script src="js/includes.js" data-target="site-header" data-file="Header.html"></script>
+<link rel="preload" as="image" href="assets/gallery/school-background2.jpeg"/>
+<link rel="preload" as="image" href="assets/gallery/school-background.jpeg"/>
+<section id="contact-hero" class="relative h-[90vh] min-h-[540px] overflow-hidden flex items-end">
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Our Kamembe Campus" style="opacity:1;transform:scale(1)">
+<img src="assets/gallery/school-background2.jpeg" alt="Our Kamembe Campus" class="w-full h-full object-cover"/>
 </div>
-<div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-[#D62828] rounded-full border-2 border-white">
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Colorful Learning Walls" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/school-background.jpeg" alt="Colorful Learning Walls" class="w-full h-full object-cover"/>
 </div>
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="School Transport" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/school-bus.jpeg" alt="School Transport" class="w-full h-full object-cover"/>
 </div>
-<div class="hidden sm:block">
-<div class="text-white font-black text-base leading-tight tracking-tight">ST MATTHEW&#x27;S SCHOOL</div>
-</div>
-</a>
-<div class="hidden lg:flex items-center gap-0.5">
-<a href="index.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Home</a>
-<a href="about.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">About</a>
-<a href="gallery.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Gallery</a>
-<a href="events.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Events</a>
-<a href="contact.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white">
-<span class="absolute inset-x-3.5 bottom-1 h-0.5 bg-[#D62828] rounded-full">
-</span>Contact</a>
-</div>
-<div class="hidden lg:flex items-center gap-2">
-<button type="button" data-apply-open="" class="flex items-center gap-2 bg-[#D62828] hover:bg-red-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-red-900/30 hover:scale-105">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</button>
-</div>
-<button type="button" class="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Open menu">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
-<path d="M4 5h16">
-</path>
-<path d="M4 12h16">
-</path>
-<path d="M4 19h16">
-</path>
-</svg>
-</button>
-</div>
-<div class="lg:hidden bg-[#0A2A66] border-t border-white/10 px-4 py-5 space-y-1 hidden" id="mobile-nav-panel">
-<a href="index.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Home <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="about.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">About <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="gallery.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Gallery <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="events.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Events <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="contact.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white bg-white/10">Contact <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<button type="button" data-apply-open="" class="w-full bg-[#D62828] hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 mt-2">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</button>
-</div>
-<div id="apply-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 hidden" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title" aria-hidden="true">
-<div class="absolute inset-0 bg-[#07193d]/70 backdrop-blur-sm" aria-hidden="true">
-</div>
-<div class="relative w-full max-w-lg max-h-[90vh] flex flex-col bg-white rounded-3xl shadow-2xl shadow-[#0A2A66]/20 border border-gray-100 overflow-hidden">
-<div class="shrink-0 bg-gradient-to-r from-[#0A2A66] to-[#163580] px-6 py-5">
-<div class="flex items-start justify-between gap-4">
-<div>
-<div class="flex items-center gap-2 mb-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-white/90" aria-hidden="true">
-<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-</path>
-<path d="M22 10v6">
-</path>
-<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
-</path>
-</svg>
-<h3 id="apply-modal-title" class="text-white font-bold text-lg">Online Application</h3>
-</div>
-<p class="text-white/55 text-xs">Admissions 2026/27 · Step 1 of 3</p>
-</div>
-<button type="button" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors shrink-0" aria-label="Close application form">
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
-<path d="M18 6 6 18">
-</path>
-<path d="m6 6 12 12">
-</path>
-</svg>
-</button>
-</div>
-<div class="flex items-center gap-2 mt-4">
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-[#D62828] text-white ring-2 ring-white/30">1</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
-</div>
-</div>
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">2</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
-</div>
-</div>
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">3</div>
-</div>
-</div>
-</div>
-<div class="flex-1 overflow-y-auto p-6 space-y-4">
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Student Full Name</label>
-<input class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. Alice Uwimana" value=""/>
-</div>
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Grade Applying For</label>
-<select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all text-gray-600">
-<option value="" selected="">Select grade...</option>
-<option value="Nursery">Nursery</option>
-<option value="Primary 1">Primary 1</option>
-<option value="Primary 2">Primary 2</option>
-<option value="Primary 3">Primary 3</option>
-<option value="Primary 4">Primary 4</option>
-<option value="Primary 5">Primary 5</option>
-<option value="Primary 6">Primary 6</option>
-<option value="Secondary S1">Secondary S1</option>
-<option value="Secondary S2">Secondary S2</option>
-<option value="Secondary S3">Secondary S3</option>
-</select>
-</div>
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Date of Birth</label>
-<input type="date" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all" value=""/>
-</div>
-</div>
-<div class="shrink-0 flex gap-3 p-6 pt-4 border-t border-gray-100 bg-white">
-<button type="button" class="flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-bold py-3 rounded-xl text-sm shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 transition-all">Next Step <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<section id="contact" class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 will-change-transform" style="transform:translateY(0px) scale(1.15);background-image:url(https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&amp;q=80);background-size:cover;background-position:center">
-</div>
-<div class="absolute inset-0" style="background:rgba(10, 42, 102, 0.92)">
-</div>
-<div class="absolute top-16 right-16 w-72 h-72 border border-white/10 rounded-full pointer-events-none hidden lg:block">
-</div>
-<div class="absolute top-28 right-28 w-48 h-48 border border-[#D62828]/20 rounded-full pointer-events-none hidden lg:block">
-</div>
-<div class="relative z-10 text-center px-4 max-w-4xl mx-auto pt-28 pb-16 w-full">
+<div class="absolute inset-0" style="background:linear-gradient(to top, rgba(4,14,36,0.95) 0%, rgba(7,25,61,0.5) 40%, rgba(0,0,0,0.2) 100%)"></div>
+<div class="absolute inset-0" style="background:radial-gradient(ellipse at 20% 80%, rgba(214,40,40,0.15), transparent 60%)"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-4 pb-16 pt-28">
+<div class="transition-all duration-1000 opacity-0 translate-y-8">
 <div class="flex items-center justify-center gap-2 mb-6 text-white/40 text-xs font-medium">
-<a href="/" class="hover:text-white transition-colors">Home</a>
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
+<a href="index.html" class="hover:text-white transition-colors">Home</a>
+<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
 <span class="text-amber-400">Contact Us</span>
 </div>
-<div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 mb-5 backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-amber-400" aria-hidden="true">
-<path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-</path>
-<path d="M20 2v4">
-</path>
-<path d="M22 4h-4">
-</path>
-<circle cx="4" cy="20" r="2">
-</circle>
-</svg>
-<span class="text-white/70 text-[11px] font-bold uppercase tracking-widest">We&#x27;re Here for You</span>
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4 text-balance max-w-4xl mx-auto text-center">Contact ST Matthew's</h1>
+<p class="text-white/55 text-base sm:text-lg max-w-xl mx-auto leading-relaxed mb-8 text-center">Four campuses across Western Province — call your nearest branch or message our principal's office directly.</p>
+<div class="flex flex-wrap justify-center gap-4 mb-10">
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">4</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Campuses</div>
 </div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.08] tracking-tight mb-5 text-balance max-w-4xl mx-auto" style="animation:heroIn 0.8s cubic-bezier(0.16,1,0.3,1) both">Contact ST Matthew&#x27;s</h1>
-<p class="text-white/65 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10">We are always ready to help students, parents, and visitors. Reach out — we respond within one working day.</p>
-<div class="flex flex-wrap justify-center gap-3">
-<button class="flex items-center gap-2 bg-[#D62828] hover:bg-red-600 text-white font-bold px-7 py-3.5 rounded-2xl shadow-xl shadow-red-900/40 hover:scale-105 transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg> Send a Message</button>
-<button class="flex items-center gap-2 bg-white/10 border border-white/20 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-2xl backdrop-blur-sm transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation2 lucide-navigation-2" aria-hidden="true">
-<polygon points="12 2 19 21 12 17 5 21 12 2">
-</polygon>
-</svg> Get Directions</button>
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">11</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Leadership</div>
+</div>
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">1 Day</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Response</div>
 </div>
 </div>
-<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-40">
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-white animate-bounce" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+</div>
+<div class="flex items-center justify-between max-w-2xl mx-auto">
+<div class="flex items-center gap-3">
+<button type="button" data-hero-prev class="w-9 h-9 rounded-full flex items-center justify-center text-white transition-all" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15)" aria-label="Previous slide"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+<div class="flex gap-2 items-center">
+<button type="button" data-hero-dot="0" class="transition-all rounded-full w-8 h-2.5 bg-amber-400" aria-label="Slide 1"></button>
+<button type="button" data-hero-dot="1" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 2"></button>
+<button type="button" data-hero-dot="2" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 3"></button>
+</div>
+<button type="button" data-hero-next class="w-9 h-9 rounded-full flex items-center justify-center text-white transition-all" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15)" aria-label="Next slide"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+</div>
+<button type="button" data-scroll-to-form class="flex items-center gap-1.5 text-white/50 hover:text-white text-xs transition-all px-3 py-1.5 rounded-full" style="border:1px solid rgba(255,255,255,0.1)"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+</div>
+</div>
+<div class="absolute top-24 right-8 hidden lg:flex flex-col items-end gap-2 z-10" data-hero-captions>
+<div class="transition-all duration-500 text-right opacity-100 translate-x-0" data-hero-caption><div class="text-white/80 text-sm font-semibold">Our Kamembe Campus</div><div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div></div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption><div class="text-white/80 text-sm font-semibold">Colorful Learning Walls</div><div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div></div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption><div class="text-white/80 text-sm font-semibold">School Transport</div><div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div></div>
 </div>
 </section>
 <section class="py-20 px-4 bg-[#F5F7FA]">
 <div class="max-w-6xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-[#0A2A66]/8 rounded-full px-4 py-1.5 mb-4">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
+<i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>
 <span class="text-[#0A2A66] font-bold text-xs tracking-widest uppercase">Get In Touch</span>
 </div>
 <h2 class="text-4xl sm:text-5xl font-black text-[#0A2A66] tracking-tight">Contact Information</h2>
@@ -261,10 +104,7 @@
 </div>
 <div class="relative z-10 flex items-center justify-between">
 <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-white" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
+<i class="fa-solid fa-phone text-white" aria-hidden="true"></i>
 </div>
 <span class="text-[10px] font-black text-white/70 uppercase tracking-widest bg-white/10 px-2.5 py-1 rounded-full border border-white/20">Tap to Call</span>
 </div>
@@ -273,38 +113,29 @@
 <div class="p-5 space-y-3">
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Admissions Office</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Principal's Office</p>
+<a href="tel:+250788260529" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 788 260 529</a>
+</div>
+<a href="tel:+250788260529" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
+</a>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Kamembe Main Campus</p>
 <a href="tel:+250788123456" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 788 123 456</a>
 </div>
 <a href="tel:+250788123456" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
 </a>
 </div>
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Reception</p>
-<a href="tel:+250722987654" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 722 987 654</a>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">School Pastor</p>
+<a href="tel:+250788305418" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 788 305 418</a>
 </div>
-<a href="tel:+250722987654" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</a>
-</div>
-<div class="flex items-start justify-between gap-2">
-<div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Emergency</p>
-<a href="tel:+250730000999" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 730 000 999</a>
-</div>
-<a href="tel:+250730000999" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
+<a href="tel:+250788305418" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
 </a>
 </div>
 </div>
@@ -317,12 +148,7 @@
 </div>
 <div class="relative z-10 flex items-center justify-between">
 <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-white" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
+<i class="fa-solid fa-envelope text-white" aria-hidden="true"></i>
 </div>
 <span class="text-[10px] font-black text-white/70 uppercase tracking-widest bg-white/10 px-2.5 py-1 rounded-full border border-white/20">Click to Copy</span>
 </div>
@@ -331,44 +157,29 @@
 <div class="p-5 space-y-3">
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">General</p>
-<p class="text-sm font-semibold text-gray-700 truncate">info@stmatthewsschool.rw</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">School Email</p>
+<a href="mailto:collegestmatthews@gmail.com" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">collegestmatthews@gmail.com</a>
 </div>
-<button class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
+<button type="button" data-copy-text="collegestmatthews@gmail.com" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all" aria-label="Copy email">
+<i class="fa-solid fa-copy" aria-hidden="true"></i>
 </button>
 </div>
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Admissions</p>
-<p class="text-sm font-semibold text-gray-700 truncate">admissions@stmatthewsschool.rw</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Finance (Bursar)</p>
+<a href="tel:+250788634205" class="text-sm font-semibold text-[#0A2A66] hover:text-[#D62828] transition-colors truncate block">+250 788 634 205</a>
 </div>
-<button class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
+<button type="button" data-copy-text="+250 788 634 205" class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all" aria-label="Copy phone">
+<i class="fa-solid fa-copy" aria-hidden="true"></i>
 </button>
 </div>
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Support</p>
-<p class="text-sm font-semibold text-gray-700 truncate">support@stmatthewsschool.rw</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Principal</p>
+<a href="mailto:collegestmatthews@gmail.com?subject=Message%20for%20Principal" class="text-sm font-semibold text-gray-700 truncate">Message the Principal</a>
 </div>
-<button class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
+<button type="button" data-scroll-to-form class="shrink-0 w-7 h-7 rounded-lg bg-gray-100 hover:bg-[#0A2A66] hover:text-white flex items-center justify-center text-gray-400 transition-all" aria-label="Go to contact form">
+<i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
 </button>
 </div>
 </div>
@@ -381,12 +192,7 @@
 </div>
 <div class="relative z-10 flex items-center justify-between">
 <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-white" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>
+<i class="fa-solid fa-location-dot text-white" aria-hidden="true"></i>
 </div>
 </div>
 <h3 class="relative z-10 text-white font-black text-base mt-4">School Address</h3>
@@ -395,7 +201,7 @@
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
 <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Street</p>
-<p class="text-sm font-semibold text-gray-700 truncate">Rus 123 St, Rusizi</p>
+<p class="text-sm font-semibold text-gray-700 truncate">Kamembe, Rusizi District</p>
 </div>
 </div>
 <div class="flex items-start justify-between gap-2">
@@ -406,8 +212,8 @@
 </div>
 <div class="flex items-start justify-between gap-2">
 <div class="min-w-0">
-<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Landmark</p>
-<p class="text-sm font-semibold text-gray-700 truncate">Kamembe</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">Branches</p>
+<p class="text-sm font-semibold text-gray-700 truncate">Kamembe, Tyazo, Ntendezi, Gashonga</p>
 </div>
 </div>
 </div>
@@ -420,12 +226,7 @@
 </div>
 <div class="relative z-10 flex items-center justify-between">
 <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-white" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>
+<i class="fa-solid fa-clock text-white" aria-hidden="true"></i>
 </div>
 </div>
 <h3 class="relative z-10 text-white font-black text-base mt-4">Working Hours</h3>
@@ -459,34 +260,29 @@
 <div class="grid lg:grid-cols-2 gap-10 items-start">
 <div>
 <div class="inline-flex items-center gap-2 bg-[#D62828]/8 rounded-full px-4 py-1.5 mb-5">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send text-[#D62828]" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg>
+<i class="fa-solid fa-paper-plane text-[#D62828]" aria-hidden="true"></i>
 <span class="text-[#D62828] font-bold text-xs tracking-widest uppercase">Send a Message</span>
 </div>
 <h2 class="text-4xl font-black text-[#0A2A66] tracking-tight mb-3">We&#x27;d Love to Hear<br/>From You</h2>
 <p class="text-gray-500 text-sm mb-8 leading-relaxed">Fill in the form and our team will get back to you within one working day. All fields marked * are required.</p>
-<form class="space-y-4">
+<form class="space-y-4" data-contact-form novalidate>
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="relative">
-<input type="text" placeholder="" required="" class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all placeholder:text-gray-400" value=""/>
-<label class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Full Name *</label>
+<input type="text" name="name" id="contact-name" required class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all"/>
+<label for="contact-name" class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0A2A66] peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-xs">Full Name *</label>
 </div>
 <div class="relative">
-<input type="email" placeholder="" required="" class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all placeholder:text-gray-400" value=""/>
-<label class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Email Address *</label>
+<input type="email" name="email" id="contact-email" required class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all"/>
+<label for="contact-email" class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0A2A66] peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-xs">Email Address *</label>
 </div>
 </div>
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="relative">
-<input type="tel" placeholder="" class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all placeholder:text-gray-400" value=""/>
-<label class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Phone Number</label>
+<input type="tel" name="phone" id="contact-phone" class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all"/>
+<label for="contact-phone" class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0A2A66] peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-xs">Phone Number</label>
 </div>
 <div class="relative">
-<select required="" class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all appearance-none">
+<select name="subject" id="contact-subject" required class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all appearance-none">
 <option value="" selected="">Select...</option>
 <option>Admissions Enquiry</option>
 <option>Fee Structure</option>
@@ -495,46 +291,20 @@
 <option>Transport Services</option>
 <option>Other</option>
 </select>
-<label class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Subject *</label>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<label for="contact-subject" class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Subject *</label>
+<i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" aria-hidden="true"></i>
 </div>
 </div>
 <div class="relative">
-<textarea rows="4" placeholder="" class="w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all resize-none placeholder:text-gray-400">
-</textarea>
-<label class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400">Message *</label>
+<textarea name="message" id="contact-message" rows="4" required class="peer w-full border-2 border-gray-200 rounded-2xl px-4 pt-6 pb-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#0A2A66] transition-all resize-none"></textarea>
+<label for="contact-message" class="absolute left-4 pointer-events-none font-semibold transition-all duration-200 top-4 text-sm text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0A2A66] peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-xs">Message *</label>
 </div>
-<label class="flex items-center gap-3 border-2 border-dashed border-gray-200 rounded-2xl px-5 py-4 cursor-pointer hover:border-[#0A2A66]/40 hover:bg-blue-50/40 transition-all group">
-<div class="w-10 h-10 rounded-xl bg-gray-100 group-hover:bg-[#0A2A66]/10 flex items-center justify-center transition-colors">
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip text-gray-400 group-hover:text-[#0A2A66] transition-colors" aria-hidden="true">
-<path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551">
-</path>
-</svg>
-</div>
-<div>
-<p class="text-sm font-bold text-gray-600 group-hover:text-[#0A2A66] transition-colors">Attach a file (optional)</p>
-<p class="text-xs text-gray-400">PDF, JPG, PNG up to 5MB</p>
-</div>
-<input type="file" class="hidden" accept=".pdf,.jpg,.jpeg,.png"/>
-</label>
+<p id="contact-form-status" class="hidden text-sm font-semibold rounded-xl px-4 py-3" role="status" aria-live="polite"></p>
 <div class="flex gap-3">
 <button type="submit" class="flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-black py-4 rounded-2xl shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 hover:scale-[1.01] transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg> Send Message</button>
-<button type="button" class="w-14 h-14 rounded-2xl border-2 border-gray-200 flex items-center justify-center text-gray-400 hover:border-gray-300 hover:text-gray-600 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw" aria-hidden="true">
-<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8">
-</path>
-<path d="M3 3v5h5">
-</path>
-</svg>
+<i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message</button>
+<button type="reset" class="w-14 h-14 rounded-2xl border-2 border-gray-200 flex items-center justify-center text-gray-400 hover:border-gray-300 hover:text-gray-600 transition-all" aria-label="Reset form">
+<i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
 </button>
 </div>
 </form>
@@ -542,10 +312,7 @@
 <div id="map-section" class="space-y-5">
 <div>
 <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-100 rounded-full px-4 py-1.5 mb-5">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation2 lucide-navigation-2 text-amber-600" aria-hidden="true">
-<polygon points="12 2 19 21 12 17 5 21 12 2">
-</polygon>
-</svg>
+<i class="fa-solid fa-location-arrow text-amber-600" aria-hidden="true"></i>
 <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">Find Us</span>
 </div>
 <h2 class="text-4xl font-black text-[#0A2A66] tracking-tight mb-2">Our Location</h2>
@@ -556,70 +323,38 @@
 </iframe>
 <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg flex items-center gap-4">
 <div class="w-12 h-12 rounded-xl bg-[#D62828] flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-white" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>
+<i class="fa-solid fa-location-dot text-white" aria-hidden="true"></i>
 </div>
 <div class="min-w-0">
-<p class="font-black text-[#0A2A66] text-sm">ST Matthew&#x27;s School</p>
-<p class="text-gray-400 text-xs truncate">Kamembe 123 St, Rusizi, Rwanda</p>
+<p class="font-black text-[#0A2A66] text-sm">ST Matthew's School</p>
+<p class="text-gray-400 text-xs truncate">Kamembe, Rusizi District, Rwanda</p>
 </div>
-<a href="https://maps.google.com?q=rusizi+Rwanda" target="_blank" rel="noreferrer" class="shrink-0 flex items-center gap-1.5 bg-[#0A2A66] hover:bg-[#163580] text-white font-bold text-xs px-3.5 py-2 rounded-xl transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-hidden="true">
-<path d="M15 3h6v6">
-</path>
-<path d="M10 14 21 3">
-</path>
-<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
-</path>
-</svg> Directions</a>
+<a href="https://maps.google.com/?q=Kamembe,Rusizi,Rwanda" target="_blank" rel="noopener noreferrer" class="shrink-0 flex items-center gap-1.5 bg-[#0A2A66] hover:bg-[#163580] text-white font-bold text-xs px-3.5 py-2 rounded-xl transition-all">
+<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Directions</a>
 </div>
 </div>
 <div class="grid grid-cols-2 gap-3">
 <div class="flex items-center gap-2.5 bg-[#F5F7FA] rounded-2xl px-4 py-3 border border-gray-100">
 <div class="w-8 h-8 rounded-xl bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-navigation2 lucide-navigation-2 text-[#0A2A66]" aria-hidden="true">
-<polygon points="12 2 19 21 12 17 5 21 12 2">
-</polygon>
-</svg>
+<i class="fa-solid fa-location-arrow text-[#0A2A66]" aria-hidden="true"></i>
 </div>
 <span class="text-xs font-semibold text-gray-600">3 km from city centre</span>
 </div>
 <div class="flex items-center gap-2.5 bg-[#F5F7FA] rounded-2xl px-4 py-3 border border-gray-100">
 <div class="w-8 h-8 rounded-xl bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-[#0A2A66]" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>
+<i class="fa-solid fa-clock text-[#0A2A66]" aria-hidden="true"></i>
 </div>
 <span class="text-xs font-semibold text-gray-600">Open Mon–Sat</span>
 </div>
 <div class="flex items-center gap-2.5 bg-[#F5F7FA] rounded-2xl px-4 py-3 border border-gray-100">
 <div class="w-8 h-8 rounded-xl bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-[#0A2A66]" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
-</path>
-<path d="M2 12h20">
-</path>
-</svg>
+<i class="fa-solid fa-globe text-[#0A2A66]" aria-hidden="true"></i>
 </div>
 <span class="text-xs font-semibold text-gray-600">Western Province</span>
 </div>
 <div class="flex items-center gap-2.5 bg-[#F5F7FA] rounded-2xl px-4 py-3 border border-gray-100">
 <div class="w-8 h-8 rounded-xl bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-[#0A2A66]" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>
+<i class="fa-solid fa-location-dot text-[#0A2A66]" aria-hidden="true"></i>
 </div>
 <span class="text-xs font-semibold text-gray-600">Kamembe</span>
 </div>
@@ -632,380 +367,84 @@
 <div class="max-w-6xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-[#0A2A66]/8 rounded-full px-4 py-1.5 mb-4">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-[#0A2A66]" aria-hidden="true">
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<path d="M16 3.128a4 4 0 0 1 0 7.744">
-</path>
-<path d="M22 21v-2a4 4 0 0 0-3-3.87">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
+<i class="fa-solid fa-users text-[#0A2A66]" aria-hidden="true"></i>
 <span class="text-[#0A2A66] font-bold text-xs tracking-widest uppercase">Our Team</span>
 </div>
-<h2 class="text-4xl sm:text-5xl font-black text-[#0A2A66] tracking-tight">Department Contacts</h2>
-<p class="text-gray-500 mt-3 text-sm max-w-xl mx-auto leading-relaxed">Reach the right team directly for faster, more accurate assistance.</p>
+<h2 class="text-4xl sm:text-5xl font-black text-[#0A2A66] tracking-tight">Campus &amp; Leadership Contacts</h2>
+<p class="text-gray-500 mt-3 text-sm max-w-xl mx-auto leading-relaxed">Real phone numbers from our <a href="about.html#leadership" class="text-[#0A2A66] font-semibold hover:text-[#D62828]">Leadership</a> and <a href="about.html#branches" class="text-[#0A2A66] font-semibold hover:text-[#D62828]">School Branches</a> pages.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+<article class="contact-branch-card contact-branch-card--navy">
+<h3 class="contact-branch-card__campus">Kamembe · Main Campus</h3>
+<p class="contact-branch-card__loc">Kamembe, Rusizi District</p>
+<a href="tel:+250788123456" class="contact-branch-card__phone"><i class="fa-solid fa-phone" aria-hidden="true"></i>+250 788 123 456</a>
+<p class="contact-branch-card__levels">Nursery · Primary · Secondary</p>
+</article>
+<article class="contact-branch-card contact-branch-card--amber">
+<h3 class="contact-branch-card__campus">Tyazo Campus</h3>
+<p class="contact-branch-card__loc">Tyazo, Nyamasheke District</p>
+<p class="contact-branch-card__head">Mr. Emmanuel HABIMANA</p>
+<a href="tel:+250722456789" class="contact-branch-card__phone"><i class="fa-solid fa-phone" aria-hidden="true"></i>+250 722 456 789</a>
+<p class="contact-branch-card__levels">Nursery · Primary</p>
+</article>
+<article class="contact-branch-card contact-branch-card--navy">
+<h3 class="contact-branch-card__campus">Ntendezi Campus</h3>
+<p class="contact-branch-card__loc">Ntendezi, Nyamasheke District</p>
+<p class="contact-branch-card__head">Mr. Jean Claude MANIRAKIZA</p>
+<a href="tel:+250733210445" class="contact-branch-card__phone"><i class="fa-solid fa-phone" aria-hidden="true"></i>+250 733 210 445</a>
+<p class="contact-branch-card__levels">Nursery · Primary</p>
+</article>
+<article class="contact-branch-card contact-branch-card--amber">
+<h3 class="contact-branch-card__campus">Gashonga Campus</h3>
+<p class="contact-branch-card__loc">Gashonga, Rusizi District</p>
+<p class="contact-branch-card__head">Mr. Pierre NDAYISENGA</p>
+<a href="tel:+250739880112" class="contact-branch-card__phone"><i class="fa-solid fa-phone" aria-hidden="true"></i>+250 739 880 112</a>
+<p class="contact-branch-card__levels">Nursery · Primary</p>
+</article>
 </div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#0A2A6618">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap" aria-hidden="true" style="color:#0A2A66">
-<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-</path>
-<path d="M22 10v6">
-</path>
-<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
-</path>
-</svg>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-[#0A2A66]/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-user-tie text-[#0A2A66]" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">MURAMIRA Benson, M.Ed</h3><p class="text-gray-400 text-xs mt-1">Principal</p></div>
 </div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">Admissions Office</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mrs. Uwimana Grace</p>
+<a href="tel:+250788260529" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 260 529</a>
+</article>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-church text-amber-600" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">Pastor Nathan MUHUTU</h3><p class="text-gray-400 text-xs mt-1">School Pastor</p></div>
 </div>
+<a href="tel:+250788305418" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 305 418</a>
+</article>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-[#D62828]/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-coins text-[#D62828]" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">Mrs. Alice Ingabire</h3><p class="text-gray-400 text-xs mt-1">Head of Finance (Bursar)</p></div>
 </div>
+<a href="tel:+250788634205" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 634 205</a>
+</article>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-[#0A2A66]/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-book text-[#0A2A66]" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">Mr. Aloys NZEYIMANA</h3><p class="text-gray-400 text-xs mt-1">Head Teacher — Secondary</p></div>
 </div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788123456" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
+<a href="tel:+250788412730" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 412 730</a>
+</article>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-book-open text-amber-600" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">Mr. Valens NDOREYAHO</h3><p class="text-gray-400 text-xs mt-1">Head Teacher — Rusizi Primary</p></div>
 </div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 123 456</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
+<a href="tel:+250788523891" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 523 891</a>
+</article>
+<article class="group bg-white rounded-3xl ring-1 ring-black/5 shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-14 h-14 rounded-2xl bg-[#0A2A66]/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-user-graduate text-[#0A2A66]" aria-hidden="true"></i></div>
+<div><h3 class="font-black text-[#0A2A66]">Mrs. Grace UWIMANA</h3><p class="text-gray-400 text-xs mt-1">Deputy Principal — Academics</p></div>
 </div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">admissions@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#D6282818">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote" aria-hidden="true" style="color:#D62828">
-<rect width="20" height="12" x="2" y="6" rx="2">
-</rect>
-<circle cx="12" cy="12" r="2">
-</circle>
-<path d="M6 12h.01M18 12h.01">
-</path>
-</svg>
-</div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">Finance Office</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mr. Habimana Jean</p>
-</div>
-</div>
-</div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788234567" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 234 567</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
-</div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">finance@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#1d6a3a18">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true" style="color:#1d6a3a">
-<path d="M12 7v14">
-</path>
-<path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
-</path>
-</svg>
-</div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">Academic Office</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mrs. Mukamana Diane</p>
-</div>
-</div>
-</div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788345678" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 345 678</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
-</div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">academics@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#6d28d918">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu" aria-hidden="true" style="color:#6d28d9">
-<path d="M12 20v2">
-</path>
-<path d="M12 2v2">
-</path>
-<path d="M17 20v2">
-</path>
-<path d="M17 2v2">
-</path>
-<path d="M2 12h2">
-</path>
-<path d="M2 17h2">
-</path>
-<path d="M2 7h2">
-</path>
-<path d="M20 12h2">
-</path>
-<path d="M20 17h2">
-</path>
-<path d="M20 7h2">
-</path>
-<path d="M7 20v2">
-</path>
-<path d="M7 2v2">
-</path>
-<rect x="4" y="4" width="16" height="16" rx="2">
-</rect>
-<rect x="8" y="8" width="8" height="8" rx="1">
-</rect>
-</svg>
-</div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">ICT Department</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mr. Nkurunziza Pat</p>
-</div>
-</div>
-</div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788456789" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 456 789</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
-</div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">ict@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#b4530918">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gavel" aria-hidden="true" style="color:#b45309">
-<path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381">
-</path>
-<path d="m16 16 6-6">
-</path>
-<path d="m21.5 10.5-8-8">
-</path>
-<path d="m8 8 6-6">
-</path>
-<path d="m8.5 7.5 8 8">
-</path>
-</svg>
-</div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">Discipline Office</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mr. Bizimana Alexis</p>
-</div>
-</div>
-</div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788567890" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 567 890</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
-</div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">discipline@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
-<div class="group bg-white rounded-3xl overflow-hidden ring-1 ring-black/5 shadow-lg shadow-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-400 p-6">
-<div class="flex items-start gap-4 mb-5">
-<div class="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#0e749018">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true" style="color:#0e7490">
-<path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
-</path>
-<circle cx="12" cy="12" r="3">
-</circle>
-</svg>
-</div>
-<div>
-<h3 class="font-black text-[#0A2A66] text-base leading-tight">Administration</h3>
-<div class="flex items-center gap-1 mt-1.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-gray-400" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>
-<p class="text-gray-400 text-xs">Mrs. Ingabire Solange</p>
-</div>
-</div>
-</div>
-<div class="space-y-3 border-t border-gray-100 pt-4">
-<a href="tel:+250788678901" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 transition-colors group/link">
-<div class="w-8 h-8 rounded-lg bg-[#0A2A66]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#0A2A66]" aria-hidden="true">
-<path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-</path>
-</svg>
-</div>
-<span class="text-sm font-semibold text-gray-700 group-hover/link:text-[#0A2A66] transition-colors">+250 788 678 901</span>
-</a>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#D62828]/5 transition-colors cursor-pointer group/copy">
-<div class="w-8 h-8 rounded-lg bg-[#D62828]/8 flex items-center justify-center shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#D62828]" aria-hidden="true">
-<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7">
-</path>
-<rect x="2" y="4" width="20" height="16" rx="2">
-</rect>
-</svg>
-</div>
-<span class="text-xs font-semibold text-gray-600 flex-1 truncate group-hover/copy:text-[#D62828] transition-colors">admin@stmatthewsschool.rw</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy text-gray-300 shrink-0" aria-hidden="true">
-<rect width="14" height="14" x="8" y="8" rx="2" ry="2">
-</rect>
-<path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
-</path>
-</svg>
-</div>
-</div>
-</div>
+<a href="tel:+250788745330" class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#0A2A66]/5 text-sm font-semibold text-gray-700"><i class="fa-solid fa-phone text-[#0A2A66]" aria-hidden="true"></i>+250 788 745 330</a>
+</article>
 </div>
 </div>
 </section>
@@ -1013,16 +452,7 @@
 <div class="max-w-5xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-[#D62828]/8 rounded-full px-4 py-1.5 mb-4">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[#D62828]" aria-hidden="true">
-<path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-</path>
-<path d="M20 2v4">
-</path>
-<path d="M22 4h-4">
-</path>
-<circle cx="4" cy="20" r="2">
-</circle>
-</svg>
+<i class="fa-solid fa-wand-magic-sparkles text-[#D62828]" aria-hidden="true"></i>
 <span class="text-[#D62828] font-bold text-xs tracking-widest uppercase">Quick Actions</span>
 </div>
 <h2 class="text-4xl sm:text-5xl font-black text-[#0A2A66] tracking-tight">How Can We Help?</h2>
@@ -1030,127 +460,53 @@
 <div class="flex flex-wrap justify-center gap-4">
 <button class="group flex items-center gap-3 bg-white border-2 border-gray-100 hover:border-current rounded-2xl px-5 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-left" style="--hover-color:#D62828">
 <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#D6282818">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap" aria-hidden="true" style="color:#D62828">
-<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-</path>
-<path d="M22 10v6">
-</path>
-<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
-</path>
-</svg>
+<i class="fa-solid fa-graduation-cap" style="color:#D62828" aria-hidden="true"></i>
 </div>
 <div>
 <p class="font-black text-gray-800 text-sm">Apply for Admission</p>
 <p class="text-gray-400 text-xs">Start your application today</p>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true"></i>
 </button>
 <button class="group flex items-center gap-3 bg-white border-2 border-gray-100 hover:border-current rounded-2xl px-5 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-left" style="--hover-color:#0A2A66">
 <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#0A2A6618">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download" aria-hidden="true" style="color:#0A2A66">
-<path d="M12 15V3">
-</path>
-<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
-</path>
-<path d="m7 10 5 5 5-5">
-</path>
-</svg>
+<i class="fa-solid fa-download" style="color:#0A2A66" aria-hidden="true"></i>
 </div>
 <div>
 <p class="font-black text-gray-800 text-sm">Download Prospectus</p>
 <p class="text-gray-400 text-xs">Get our school brochure</p>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true"></i>
 </button>
 <button class="group flex items-center gap-3 bg-white border-2 border-gray-100 hover:border-current rounded-2xl px-5 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-left" style="--hover-color:#1d6a3a">
 <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#1d6a3a18">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true" style="color:#1d6a3a">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>
+<i class="fa-solid fa-calendar-days" style="color:#1d6a3a" aria-hidden="true"></i>
 </div>
 <div>
 <p class="font-black text-gray-800 text-sm">Request Appointment</p>
 <p class="text-gray-400 text-xs">Schedule a campus visit</p>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true"></i>
 </button>
 <button class="group flex items-center gap-3 bg-white border-2 border-gray-100 hover:border-current rounded-2xl px-5 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-left" style="--hover-color:#b45309">
 <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#b4530918">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert" aria-hidden="true" style="color:#b45309">
-<circle cx="12" cy="12" r="10">
-</circle>
-<line x1="12" x2="12" y1="8" y2="12">
-</line>
-<line x1="12" x2="12.01" y1="16" y2="16">
-</line>
-</svg>
+<i class="fa-solid fa-circle-exclamation" style="color:#b45309" aria-hidden="true"></i>
 </div>
 <div>
 <p class="font-black text-gray-800 text-sm">Report an Issue</p>
 <p class="text-gray-400 text-xs">We take concerns seriously</p>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true"></i>
 </button>
 <button class="group flex items-center gap-3 bg-white border-2 border-gray-100 hover:border-current rounded-2xl px-5 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-left" style="--hover-color:#6d28d9">
 <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-110" style="background-color:#6d28d918">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true" style="color:#6d28d9">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" style="color:#6d28d9" aria-hidden="true"></i>
 </div>
 <div>
 <p class="font-black text-gray-800 text-sm">Ask a Question</p>
 <p class="text-gray-400 text-xs">Our team will respond fast</p>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-gray-600 group-hover:translate-x-0.5 transition-all ml-2 shrink-0" aria-hidden="true"></i>
 </button>
 </div>
 </div>
@@ -1159,114 +515,64 @@
 <div class="social-section-navy__inner">
 <header class="social-section-navy__header">
 <p class="social-section-navy__eyebrow">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-amber-400" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
-</path>
-<path d="M2 12h20">
-</path>
-</svg>Follow Us</p>
+<i class="fa-solid fa-globe text-amber-400" aria-hidden="true"></i>Follow Us</p>
 <h2 id="social-heading" class="social-section-navy__title">Stay Connected</h2>
 <p class="social-section-navy__lead">Follow ST Matthew&#x27;s on social media for news, events, and behind-the-scenes campus life.</p>
 </header>
 <div class="social-section-navy__grid">
 <a href="#" class="social-section-navy__card">
 <span class="social-section-navy__card-icon" style="background-color:#1877F228;border:1px solid #1877F240">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2" aria-hidden="true" style="color:#1877F2">
-<circle cx="18" cy="5" r="3">
-</circle>
-<circle cx="6" cy="12" r="3">
-</circle>
-<circle cx="18" cy="19" r="3">
-</circle>
-<line x1="8.59" x2="15.42" y1="13.51" y2="17.49">
-</line>
-<line x1="15.41" x2="8.59" y1="6.51" y2="10.49">
-</line>
-</svg>
+<i class="fa-brands fa-facebook-f" style="color:#1877F2" aria-hidden="true"></i>
 </span>
 <p class="social-section-navy__card-name">Facebook</p>
 <p class="social-section-navy__card-handle">@STMatthewsSchool</p>
 <span class="social-section-navy__card-follow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>Follow</span>
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Follow</span>
 </a>
-<a href="#" class="social-section-navy__card">
+<a href="https://www.instagram.com/stmatthewsschools?igsh=MXJwM2p3N2YyZWd1NQ==" class="social-section-navy__card" target="_blank" rel="noopener noreferrer">
 <span class="social-section-navy__card-icon" style="background-color:#E1306C28;border:1px solid #E1306C40">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" aria-hidden="true" style="color:#E1306C">
-<path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
-</path>
-<circle cx="12" cy="13" r="3">
-</circle>
-</svg>
+<i class="fa-brands fa-instagram" style="color:#E1306C" aria-hidden="true"></i>
 </span>
 <p class="social-section-navy__card-name">Instagram</p>
-<p class="social-section-navy__card-handle">@stmatthews_rw</p>
+<p class="social-section-navy__card-handle">@stmatthewsschools</p>
 <span class="social-section-navy__card-follow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>Follow</span>
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Follow</span>
+</a>
+<a href="https://x.com/stmatthews_west?s=21" class="social-section-navy__card" target="_blank" rel="noopener noreferrer">
+<span class="social-section-navy__card-icon" style="background-color:#00000028;border:1px solid #00000040">
+<i class="fa-brands fa-x-twitter" style="color:#ffffff" aria-hidden="true"></i>
+</span>
+<p class="social-section-navy__card-name">X</p>
+<p class="social-section-navy__card-handle">@StMatthews_West</p>
+<span class="social-section-navy__card-follow">
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Follow</span>
 </a>
 <a href="#" class="social-section-navy__card">
 <span class="social-section-navy__card-icon" style="background-color:#FF000028;border:1px solid #FF000040">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true" style="color:#FF0000">
-<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
-</path>
-</svg>
+<i class="fa-brands fa-youtube" style="color:#FF0000" aria-hidden="true"></i>
 </span>
 <p class="social-section-navy__card-name">YouTube</p>
 <p class="social-section-navy__card-handle">ST Matthew&#x27;s TV</p>
 <span class="social-section-navy__card-follow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>Follow</span>
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Follow</span>
 </a>
 <a href="#" class="social-section-navy__card">
 <span class="social-section-navy__card-icon" style="background-color:#00000028;border:1px solid #00000040">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2" aria-hidden="true" style="color:#ffffff">
-<circle cx="8" cy="18" r="4">
-</circle>
-<path d="M12 18V2l7 4">
-</path>
-</svg>
+<i class="fa-brands fa-tiktok" style="color:#ffffff" aria-hidden="true"></i>
 </span>
 <p class="social-section-navy__card-name">TikTok</p>
 <p class="social-section-navy__card-handle">@stmatthews</p>
 <span class="social-section-navy__card-follow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>Follow</span>
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Follow</span>
 </a>
-<a href="#" class="social-section-navy__card">
+<a href="https://wa.me/250788260529" class="social-section-navy__card" target="_blank" rel="noopener noreferrer">
 <span class="social-section-navy__card-icon" style="background-color:#25D36628;border:1px solid #25D36640">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle" aria-hidden="true" style="color:#25D366">
-<path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
-</path>
-</svg>
+<i class="fa-solid fa-comment" style="color:#25D366" aria-hidden="true"></i>
 </span>
 <p class="social-section-navy__card-name">WhatsApp</p>
-<p class="social-section-navy__card-handle">+250 788 123 456</p>
+<p class="social-section-navy__card-handle">+250 788 260 529</p>
 <span class="social-section-navy__card-follow">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>Follow</span>
+<i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i>Chat</span>
 </a>
 </div>
 </div>
@@ -1275,14 +581,7 @@
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-[#0A2A66]/8 rounded-full px-4 py-1.5 mb-4">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark text-[#0A2A66]" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question text-[#0A2A66]" aria-hidden="true"></i>
 <span class="text-[#0A2A66] font-bold text-xs tracking-widest uppercase">Common Questions</span>
 </div>
 <h2 class="text-4xl sm:text-5xl font-black text-[#0A2A66] tracking-tight">FAQs</h2>
@@ -1290,286 +589,100 @@
 </div>
 <div class="space-y-3">
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">How does the admission process work?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
+<div class="hidden px-6 pb-5 text-sm text-gray-500 leading-relaxed">Visit any campus or call the Principal's office at +250 788 260 529. Complete the application form and submit required documents — our admissions team guides you through each step.</div>
 </div>
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">What are the school fees for 2026/27?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
+<div class="hidden px-6 pb-5 text-sm text-gray-500 leading-relaxed">Contact the Bursar, Mrs. Alice Ingabire, at +250 788 634 205 or email collegestmatthews@gmail.com for the current fee structure by campus and level.</div>
 </div>
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">What academic programs do you offer?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
+<div class="hidden px-6 pb-5 text-sm text-gray-500 leading-relaxed">Nursery, Primary, and Secondary (O-Level) across four campuses — Kamembe, Tyazo, Ntendezi, and Gashonga — with CBC curriculum and Christian education.</div>
 </div>
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">What is the school uniform policy?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
 </div>
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">Do you offer transport services?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
+<div class="hidden px-6 pb-5 text-sm text-gray-500 leading-relaxed">Yes — dedicated school buses serve all campuses. Contact your nearest branch office for routes and availability.</div>
 </div>
 <div class="bg-white rounded-2xl ring-1 overflow-hidden transition-all duration-300 ring-black/5 shadow-sm hover:shadow-md">
-<button class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+<button type="button" data-faq class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-[#0A2A66]/8 text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3">
-</path>
-<path d="M12 17h.01">
-</path>
-</svg>
+<i class="fa-solid fa-circle-question" aria-hidden="true"></i>
 </div>
 <span class="font-bold text-sm leading-snug transition-colors text-gray-700">Can parents visit the school at any time?</span>
 </div>
 <div class="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-all bg-gray-100 text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true">
-<path d="m6 9 6 6 6-6">
-</path>
-</svg>
+<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </div>
 </button>
 </div>
 </div>
 <div class="text-center mt-10">
 <p class="text-gray-400 text-sm mb-4">Still have questions?</p>
-<button class="inline-flex items-center gap-2 bg-[#D62828] hover:bg-red-700 text-white font-bold px-7 py-3.5 rounded-2xl shadow-lg shadow-red-900/25 hover:scale-105 transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg> Ask Us Directly</button>
+<button type="button" data-scroll-to-form class="inline-flex items-center gap-2 bg-[#D62828] hover:bg-red-700 text-white font-bold px-7 py-3.5 rounded-2xl shadow-lg shadow-red-900/25 hover:scale-105 transition-all text-sm">
+<i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Ask Us Directly</button>
 </div>
 </div>
 </section>
-<footer class="site-footer">
-<div class="site-footer__inner">
-<div class="site-footer__grid">
-<div>
-<div class="site-footer__brand">
-<div class="site-footer__logo">
-<img src="assets/st-logo.png" alt="ST Matthew&#x27;s School crest"/>
-</div>
-<div class="site-footer__name">ST MATTHEW&#x27;S SCHOOL</div>
-</div>
-<p class="site-footer__motto">&quot;The Fear of God is the Beginning of Knowledge&quot; Proverbs 1:7</p>
-<div class="contact-section__social">
-<a href="#" class="contact-social-btn" aria-label="Facebook">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2" aria-hidden="true">
-<circle cx="18" cy="5" r="3">
-</circle>
-<circle cx="6" cy="12" r="3">
-</circle>
-<circle cx="18" cy="19" r="3">
-</circle>
-<line x1="8.59" x2="15.42" y1="13.51" y2="17.49">
-</line>
-<line x1="15.41" x2="8.59" y1="6.51" y2="10.49">
-</line>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="Instagram">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" aria-hidden="true">
-<path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
-</path>
-<circle cx="12" cy="13" r="3">
-</circle>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="YouTube">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true">
-<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
-</path>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="TikTok">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2" aria-hidden="true">
-<circle cx="8" cy="18" r="4">
-</circle>
-<path d="M12 18V2l7 4">
-</path>
-</svg>
-</a>
-</div>
-</div>
-<div>
-<h4 class="site-footer__heading">Quick Links</h4>
-<ul class="site-footer__links">
-<li>
-<a href="index.html#admissions">Admissions</a>
-</li>
-<li>
-<a href="index.html#academics">Academics</a>
-</li>
-<li>
-<a href="gallery.html">Gallery</a>
-</li>
-<li>
-<a href="events.html">News &amp; Events</a>
-</li>
-<li>
-<a href="#">Staff Portal</a>
-</li>
-<li>
-<a href="#">Alumni</a>
-</li>
-</ul>
-</div>
-<div>
-<h4 class="site-footer__heading">Policies</h4>
-<ul class="site-footer__links">
-<li>
-<a href="#">School Rules</a>
-</li>
-<li>
-<a href="#">Dress Code</a>
-</li>
-<li>
-<a href="#">Privacy Policy</a>
-</li>
-<li>
-<a href="#">Child Protection</a>
-</li>
-<li>
-<a href="#">Anti-Bullying</a>
-</li>
-<li>
-<a href="#">Exam Policy</a>
-</li>
-</ul>
-</div>
-<div>
-<h4 class="site-footer__heading">Newsletter</h4>
-<p class="site-footer__newsletter-text">Get school news and updates delivered to your inbox.</p>
-<form class="site-footer__newsletter-form">
-<input type="email" placeholder="Enter your email" aria-label="Email for newsletter" value=""/>
-<button type="submit">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg>
-</button>
-</form>
-</div>
-</div>
-<div class="site-footer__bottom">
-<span>© 2026 ST Matthew&#x27;s School. All rights reserved.</span>
-<span>Crafted with care in Kigali, Rwanda <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart site-footer__bottom-heart inline" aria-hidden="true">
-<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
-</path>
-</svg>
-</span>
-</div>
-</div>
-</footer>
+<div id="site-footer"></div>
+<script src="js/includes.js" data-target="site-footer" data-file="Footer.html"></script>
 <style>
-@keyframes heroIn {
-from { opacity: 0; transform: translateY(28px); }
-to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes progress {
-from { width: 0%; }
-to   { width: 100%; }
-}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 </div>
 <script src="js/site.js" defer></script>

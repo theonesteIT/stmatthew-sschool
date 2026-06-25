@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -19,394 +19,140 @@
       }
     };
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <link rel="stylesheet" href="css/site.css" />
+  <script src="js/include-fallback.js"></script>
 </head>
-<body class="antialiased">
+<body class="antialiased" data-page="events">
 <link rel="preload" as="image" href="assets/st-logo.png"/>
-<link rel="preload" as="image" href="assets/gallery/1.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/3.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/4.JPG"/>
-<link rel="preload" as="image" href="assets/gallery/2L7A4666.JPG"/>
-<link rel="preload" as="image" href="assets/gallery/2.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/5.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/6.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/7.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/2L7A4732.jpg"/>
-<link rel="preload" as="image" href="assets/gallery/2L7A9171.jpg"/>
+<link rel="preload" as="image" href="assets/gallery/Graduation.jpg"/>
+<link rel="preload" as="image" href="assets/gallery/culture-event.jpg"/>
+<link rel="preload" as="image" href="assets/gallery/sports3.jpeg"/>
+<link rel="preload" as="image" href="assets/gallery/worship1.jpeg"/>
+<link rel="preload" as="image" href="assets/gallery/graduations.jpeg"/>
+<link rel="preload" as="image" href="assets/gallery/founder-playingwithchild.jpeg"/>
 <div class="font-sans text-[#1F2937] bg-[#F5F7FA] min-h-screen overflow-x-hidden">
-<nav class="fixed top-0 w-full z-50 transition-all duration-500 bg-[#0A2A66] shadow-2xl shadow-[#0A2A66]/40 py-2">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-<a href="index.html" class="flex items-center gap-3 group">
-<div class="relative w-16 h-16">
-<div class="w-16 h-16 rounded-xl bg-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform p-1">
-<img src="assets/st-logo.png" alt="ST Matthew&#x27;s School logo" class="w-full h-full object-contain"/>
+<div id="site-header"></div>
+<script src="js/includes.js" data-target="site-header" data-file="Header.html"></script>
+<section class="relative h-[90vh] min-h-[540px] overflow-hidden flex items-end" id="events-hero">
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Graduation Day" style="opacity:1;transform:scale(1)">
+<img src="assets/gallery/Graduation.jpg" alt="Graduation Day — Class of 2022" class="w-full h-full object-cover"/>
 </div>
-<div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-[#D62828] rounded-full border-2 border-white">
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Cultural Heritage Festival" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/culture-event.jpg" alt="Cultural Performance" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Sports Day" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/sports3.jpeg" alt="Sports Day" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Worship &amp; Choir" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/worship1.jpeg" alt="Worship and Choir" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Christmas Celebration" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/graduations.jpeg" alt="Christmas Celebration" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute inset-0 transition-all duration-[1200ms]" data-hero-slide data-hero-label="Founders' Day" style="opacity:0;transform:scale(1.05)">
+<img src="assets/gallery/founder-playingwithchild.jpeg" alt="Founder's Legacy" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute inset-0" style="background:linear-gradient(to top, rgba(4,14,36,0.95) 0%, rgba(7,25,61,0.5) 40%, rgba(0,0,0,0.2) 100%)">
+</div>
+<div class="absolute inset-0" style="background:radial-gradient(ellipse at 20% 80%, rgba(214,40,40,0.15), transparent 60%)">
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-4 pb-16 pt-28">
+<div class="transition-all duration-1000 opacity-0 translate-y-8">
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4 text-balance max-w-4xl">School<br/>Events &amp;<br/>Activities</h1>
+<p class="text-white/55 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">Graduations, sports days, worship assemblies, cultural festivals, and field trips — real moments from life at ST Matthew's School.</p>
+<div class="flex flex-wrap gap-4 mb-10">
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">10</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Upcoming</div>
+</div>
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">4</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Featured</div>
+</div>
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">6</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Past Events</div>
+</div>
+<div class="text-center px-4 py-2 rounded-xl" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1)">
+<div class="text-amber-400 font-black text-lg leading-tight">2022–2026</div>
+<div class="text-white/40 text-[10px] uppercase tracking-widest">Years</div>
 </div>
 </div>
-<div class="hidden sm:block">
-<div class="text-white font-black text-base leading-tight tracking-tight">ST MATTHEW&#x27;S SCHOOL</div>
 </div>
-</a>
-<div class="hidden lg:flex items-center gap-0.5">
-<a href="index.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Home</a>
-<a href="about.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">About</a>
-<a href="gallery.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Gallery</a>
-<a href="events.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white">
-<span class="absolute inset-x-3.5 bottom-1 h-0.5 bg-[#D62828] rounded-full">
-</span>Events</a>
-<a href="contact.html" class="relative text-[13px] px-3.5 py-2 rounded-lg font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">Contact</a>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button type="button" data-hero-prev class="w-9 h-9 rounded-full flex items-center justify-center text-white transition-all" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15)" aria-label="Previous slide">
+<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+</button>
+<div class="flex gap-2 items-center">
+<button type="button" data-hero-dot="0" class="transition-all rounded-full w-8 h-2.5 bg-amber-400" aria-label="Slide 1"></button>
+<button type="button" data-hero-dot="1" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 2"></button>
+<button type="button" data-hero-dot="2" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 3"></button>
+<button type="button" data-hero-dot="3" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 4"></button>
+<button type="button" data-hero-dot="4" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 5"></button>
+<button type="button" data-hero-dot="5" class="transition-all rounded-full w-2.5 h-2.5 bg-white/30 hover:bg-white/60" aria-label="Slide 6"></button>
 </div>
-<div class="hidden lg:flex items-center gap-2">
-<button type="button" data-apply-open="" class="flex items-center gap-2 bg-[#D62828] hover:bg-red-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-red-900/30 hover:scale-105">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
+<button type="button" data-hero-next class="w-9 h-9 rounded-full flex items-center justify-center text-white transition-all" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15)" aria-label="Next slide">
+<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
 </button>
 </div>
-<button type="button" class="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Open menu">
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
-<path d="M4 5h16">
-</path>
-<path d="M4 12h16">
-</path>
-<path d="M4 19h16">
-</path>
-</svg>
-</button>
-</div>
-<div class="lg:hidden bg-[#0A2A66] border-t border-white/10 px-4 py-5 space-y-1 hidden" id="mobile-nav-panel">
-<a href="index.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Home <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="about.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">About <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="gallery.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Gallery <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="events.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white bg-white/10">Events <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<a href="contact.html" class="flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all text-white/80 hover:text-white hover:bg-white/10">Contact <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right opacity-50" aria-hidden="true">
-<path d="m9 18 6-6-6-6">
-</path>
-</svg>
-</a>
-<button type="button" data-apply-open="" class="w-full bg-[#D62828] hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 mt-2">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</button>
-</div>
-<div id="apply-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 hidden" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title" aria-hidden="true">
-<div class="absolute inset-0 bg-[#07193d]/70 backdrop-blur-sm" aria-hidden="true">
-</div>
-<div class="relative w-full max-w-lg max-h-[90vh] flex flex-col bg-white rounded-3xl shadow-2xl shadow-[#0A2A66]/20 border border-gray-100 overflow-hidden">
-<div class="shrink-0 bg-gradient-to-r from-[#0A2A66] to-[#163580] px-6 py-5">
-<div class="flex items-start justify-between gap-4">
-<div>
-<div class="flex items-center gap-2 mb-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-white/90" aria-hidden="true">
-<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-</path>
-<path d="M22 10v6">
-</path>
-<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
-</path>
-</svg>
-<h3 id="apply-modal-title" class="text-white font-bold text-lg">Online Application</h3>
-</div>
-<p class="text-white/55 text-xs">Admissions 2026/27 · Step 1 of 3</p>
-</div>
-<button type="button" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors shrink-0" aria-label="Close application form">
-<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
-<path d="M18 6 6 18">
-</path>
-<path d="m6 6 12 12">
-</path>
-</svg>
-</button>
-</div>
-<div class="flex items-center gap-2 mt-4">
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-[#D62828] text-white ring-2 ring-white/30">1</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
+<button type="button" data-hero-pause class="flex items-center gap-1.5 text-white/50 hover:text-white text-xs transition-all px-3 py-1.5 rounded-full" style="border:1px solid rgba(255,255,255,0.1)">
+<i class="fa-solid fa-pause" aria-hidden="true"></i><span data-hero-pause-label>Pause</span></button>
 </div>
 </div>
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">2</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
+<div class="absolute top-24 right-8 hidden lg:flex flex-col items-end gap-2 z-10" data-hero-captions>
+<div class="transition-all duration-500 text-right opacity-100 translate-x-0" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Graduation Day</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Cultural Heritage Festival</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">3</div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Sports Day</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Worship &amp; Choir</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Christmas Celebration</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
-<div class="flex-1 overflow-y-auto p-6 space-y-4">
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Student Full Name</label>
-<input class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. Alice Uwimana" value=""/>
-</div>
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Grade Applying For</label>
-<select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all text-gray-600">
-<option value="" selected="">Select grade...</option>
-<option value="Nursery">Nursery</option>
-<option value="Primary 1">Primary 1</option>
-<option value="Primary 2">Primary 2</option>
-<option value="Primary 3">Primary 3</option>
-<option value="Primary 4">Primary 4</option>
-<option value="Primary 5">Primary 5</option>
-<option value="Primary 6">Primary 6</option>
-<option value="Secondary S1">Secondary S1</option>
-<option value="Secondary S2">Secondary S2</option>
-<option value="Secondary S3">Secondary S3</option>
-</select>
-</div>
-<div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Date of Birth</label>
-<input type="date" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all" value=""/>
-</div>
-</div>
-<div class="shrink-0 flex gap-3 p-6 pt-4 border-t border-gray-100 bg-white">
-<button type="button" class="flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-bold py-3 rounded-xl text-sm shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 transition-all">Next Step <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<section class="relative min-h-[80vh] flex items-end overflow-hidden">
-<div class="absolute inset-0" style="background-image:url(assets/gallery/1.jpg);background-size:cover;background-position:center">
-</div>
-<div class="absolute inset-0 bg-gradient-to-r from-[#0A2A66]/96 via-[#0A2A66]/75 to-[#0A2A66]/30">
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-[#07193d]/90 via-transparent to-transparent">
-</div>
-<div class="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none opacity-10">
-<div class="w-96 h-96 rounded-full border-2 border-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="animation:ping 3s ease-in-out infinite">
-</div>
-<div class="w-64 h-64 rounded-full border border-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-</div>
-<div class="w-32 h-32 rounded-full border border-[#D62828] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-</div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 pb-16 pt-36 w-full">
-<div class="max-w-2xl">
-<div class="inline-flex items-center gap-2 bg-[#D62828]/80 border border-red-400/30 rounded-full px-4 py-2 mb-6">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio text-white animate-pulse" aria-hidden="true">
-<path d="M16.247 7.761a6 6 0 0 1 0 8.478">
-</path>
-<path d="M19.075 4.933a10 10 0 0 1 0 14.134">
-</path>
-<path d="M4.925 19.067a10 10 0 0 1 0-14.134">
-</path>
-<path d="M7.753 16.239a6 6 0 0 1 0-8.478">
-</path>
-<circle cx="12" cy="12" r="2">
-</circle>
-</svg>
-<span class="text-white text-xs font-black tracking-widest uppercase">Live Events Schedule 2026</span>
-</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.08] mb-5 tracking-tight text-balance max-w-4xl" style="animation:heroIn 0.8s cubic-bezier(0.16,1,0.3,1) both">School<br/>Events &amp;<br/>Activities</h1>
-<p class="text-white/70 text-lg mb-8 leading-relaxed max-w-xl">Competitions, celebrations, exams, and more — stay connected with everything happening at ST Matthew&#x27;s this year.</p>
-<div class="flex flex-wrap gap-3 mb-10">
-<button class="flex items-center gap-2 bg-white text-[#0A2A66] font-black px-6 py-3.5 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>Calendar View</button>
-<button class="flex items-center gap-2 bg-white/10 border border-white/25 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-2xl backdrop-blur-sm transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell" aria-hidden="true">
-<path d="M10.268 21a2 2 0 0 0 3.464 0">
-</path>
-<path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-</path>
-</svg>Get Reminders</button>
-<button class="flex items-center gap-2 bg-white/10 border border-white/25 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-2xl backdrop-blur-sm transition-all text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download" aria-hidden="true">
-<path d="M12 15V3">
-</path>
-<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
-</path>
-<path d="m7 10 5 5 5-5">
-</path>
-</svg>Download Schedule</button>
-</div>
-<div class="bg-white/10 border border-white/15 backdrop-blur-md rounded-2xl px-5 py-4 inline-block">
-<div class="flex items-center gap-2">
-<div class="w-2 h-2 rounded-full bg-green-400 animate-pulse">
-</div>
-<span class="text-white/80 text-xs font-semibold">Next Event:</span>
-<span class="text-white font-black text-sm">Open Day &amp; Campus Tour</span>
-<span class="text-white/50 text-xs">· JUN 07, 2026</span>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute bottom-0 left-0 right-0 bg-white/5 border-t border-white/10 backdrop-blur-sm">
-<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-around">
-<div class="text-center">
-<div class="text-white font-black text-xl">10</div>
-<div class="text-white/50 text-[10px] uppercase tracking-wide">Total Events</div>
-</div>
-<div class="text-center">
-<div class="text-white font-black text-xl">4</div>
-<div class="text-white/50 text-[10px] uppercase tracking-wide">Featured</div>
-</div>
-<div class="text-center">
-<div class="text-white font-black text-xl">3,213</div>
-<div class="text-white/50 text-[10px] uppercase tracking-wide">Registrations</div>
-</div>
-<div class="text-center">
-<div class="text-white font-black text-xl">Free</div>
-<div class="text-white/50 text-[10px] uppercase tracking-wide">Entry</div>
-</div>
+<div class="transition-all duration-500 text-right opacity-0 translate-x-4 pointer-events-none absolute" data-hero-caption>
+<div class="text-white/80 text-sm font-semibold">Founders' Day</div>
+<div class="h-0.5 w-12 ml-auto mt-1 rounded" style="background:#D62828"></div>
 </div>
 </div>
 </section>
 <section class="bg-white border-b border-gray-100 sticky top-0 z-30 shadow-sm">
 <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row gap-3">
 <div class="flex items-center gap-2 flex-1 bg-[#F5F7FA] border border-gray-200 rounded-xl px-4 py-2.5">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search text-gray-400 shrink-0" aria-hidden="true">
-<path d="m21 21-4.34-4.34">
-</path>
-<circle cx="11" cy="11" r="8">
-</circle>
-</svg>
+<i class="fa-solid fa-magnifying-glass text-gray-400 shrink-0" aria-hidden="true"></i>
 <input class="flex-1 bg-transparent text-sm focus:outline-none text-gray-600 placeholder:text-gray-400" placeholder="Search events..." value=""/>
 </div>
 <div class="flex items-center gap-2 overflow-x-auto pb-0.5">
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-[#0A2A66] text-white border-[#0A2A66] shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers" aria-hidden="true">
-<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
-</path>
-<path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12">
-</path>
-<path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17">
-</path>
-</svg>All</button>
+<i class="fa-solid fa-layer-group" aria-hidden="true"></i>All</button>
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-white text-gray-500 border-gray-200 hover:border-[#0A2A66] hover:text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true">
-<path d="M12 7v14">
-</path>
-<path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
-</path>
-</svg>Academic</button>
+<i class="fa-solid fa-book-open" aria-hidden="true"></i>Academic</button>
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-white text-gray-500 border-gray-200 hover:border-[#0A2A66] hover:text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy" aria-hidden="true">
-<path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978">
-</path>
-<path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978">
-</path>
-<path d="M18 9h1.5a1 1 0 0 0 0-5H18">
-</path>
-<path d="M4 22h16">
-</path>
-<path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z">
-</path>
-<path d="M6 9H4.5a1 1 0 0 1 0-5H6">
-</path>
-</svg>Sports</button>
+<i class="fa-solid fa-trophy" aria-hidden="true"></i>Sports</button>
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-white text-gray-500 border-gray-200 hover:border-[#0A2A66] hover:text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-church" aria-hidden="true">
-<path d="M10 9h4">
-</path>
-<path d="M12 7v5">
-</path>
-<path d="M14 21v-3a2 2 0 0 0-4 0v3">
-</path>
-<path d="m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9">
-</path>
-<path d="M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14">
-</path>
-</svg>Religious</button>
+<i class="fa-solid fa-church" aria-hidden="true"></i>Religious</button>
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-white text-gray-500 border-gray-200 hover:border-[#0A2A66] hover:text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic" aria-hidden="true">
-<path d="M12 19v3">
-</path>
-<path d="M19 10v2a7 7 0 0 1-14 0v-2">
-</path>
-<rect x="9" y="2" width="6" height="13" rx="3">
-</rect>
-</svg>Entertainment</button>
+<i class="fa-solid fa-microphone" aria-hidden="true"></i>Entertainment</button>
 <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all bg-white text-gray-500 border-gray-200 hover:border-[#0A2A66] hover:text-[#0A2A66]">
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true">
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<path d="M16 3.128a4 4 0 0 1 0 7.744">
-</path>
-<path d="M22 21v-2a4 4 0 0 0-3-3.87">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>Community</button>
+<i class="fa-solid fa-users" aria-hidden="true"></i>Community</button>
 <div class="flex bg-gray-100 rounded-xl p-1 gap-0.5 ml-1 shrink-0">
 <button class="p-1.5 rounded-lg transition-all bg-[#0A2A66] text-white">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid3x3 lucide-grid-3x3" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2">
-</rect>
-<path d="M3 9h18">
-</path>
-<path d="M3 15h18">
-</path>
-<path d="M9 3v18">
-</path>
-<path d="M15 3v18">
-</path>
-</svg>
+<i class="fa-solid fa-table-cells" aria-hidden="true"></i>
 </button>
 <button class="p-1.5 rounded-lg transition-all text-gray-400 hover:text-gray-600">
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list" aria-hidden="true">
-<path d="M3 5h.01">
-</path>
-<path d="M3 12h.01">
-</path>
-<path d="M3 19h.01">
-</path>
-<path d="M8 5h13">
-</path>
-<path d="M8 12h13">
-</path>
-<path d="M8 19h13">
-</path>
-</svg>
+<i class="fa-solid fa-list" aria-hidden="true"></i>
 </button>
 </div>
 </div>
@@ -422,77 +168,30 @@
 </div>
 <div class="grid sm:grid-cols-2 gap-5">
 <div class="group relative rounded-3xl overflow-hidden cursor-pointer h-64 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
-<img src="assets/gallery/1.jpg" alt="Open Day &amp; Campus Tour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/Graduation.jpg" alt="Graduation Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/88 via-black/30 to-transparent">
 </div>
 <div class="absolute top-4 left-4 flex gap-2">
-<span class="text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
+<span class="text-[10px] font-black px-2.5 py-1 rounded-full border bg-amber-100 text-amber-700 border-amber-200">Graduation</span>
 <span class="text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">FEATURED</span>
 </div>
 <div class="absolute inset-0 p-5 flex flex-col justify-end">
-<h3 class="text-white font-black text-xl leading-tight mb-2">Open Day &amp; Campus Tour</h3>
+<h3 class="text-white font-black text-xl leading-tight mb-2">Graduation Day</h3>
 <div class="flex flex-wrap items-center gap-3 text-white/70 text-xs mb-3">
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUN 07</span>
+<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>NOV 15</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>9:00 AM</span>
+<i class="fa-solid fa-clock" aria-hidden="true"></i>9:00 AM</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Main Campus</span>
+<i class="fa-solid fa-location-dot" aria-hidden="true"></i>Kamembe Campus</span>
 </div>
-<button class="self-start flex items-center gap-1.5 bg-white text-[#0A2A66] font-black text-xs px-4 py-2 rounded-xl hover:bg-amber-400 hover:text-white transition-all shadow-lg">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Now</button>
 </div>
 <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/15 border border-white/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-white" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-up-right text-white" aria-hidden="true"></i>
 </div>
 </div>
 <div class="group relative rounded-3xl overflow-hidden cursor-pointer h-64 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
-<img src="assets/gallery/3.jpg" alt="Inter-School Debate Championship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/sports3.jpeg" alt="Sports Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/88 via-black/30 to-transparent">
 </div>
 <div class="absolute top-4 left-4 flex gap-2">
@@ -500,69 +199,22 @@
 <span class="text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">FEATURED</span>
 </div>
 <div class="absolute inset-0 p-5 flex flex-col justify-end">
-<h3 class="text-white font-black text-xl leading-tight mb-2">Inter-School Debate Championship</h3>
+<h3 class="text-white font-black text-xl leading-tight mb-2">Annual Sports Day</h3>
 <div class="flex flex-wrap items-center gap-3 text-white/70 text-xs mb-3">
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUN 21</span>
+<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>JUL 18</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>10:00 AM</span>
+<i class="fa-solid fa-clock" aria-hidden="true"></i>8:00 AM</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Assembly Hall</span>
+<i class="fa-solid fa-location-dot" aria-hidden="true"></i>Sports Field</span>
 </div>
-<button class="self-start flex items-center gap-1.5 bg-white text-[#0A2A66] font-black text-xs px-4 py-2 rounded-xl hover:bg-amber-400 hover:text-white transition-all shadow-lg">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Now</button>
 </div>
 <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/15 border border-white/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-white" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-up-right text-white" aria-hidden="true"></i>
 </div>
 </div>
 <div class="group relative rounded-3xl overflow-hidden cursor-pointer h-64 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
-<img src="assets/gallery/4.JPG" alt="Founders&#x27; Day Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/founder-playingwithchild.jpeg" alt="Founders' Day Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/88 via-black/30 to-transparent">
 </div>
 <div class="absolute top-4 left-4 flex gap-2">
@@ -570,135 +222,41 @@
 <span class="text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">FEATURED</span>
 </div>
 <div class="absolute inset-0 p-5 flex flex-col justify-end">
-<h3 class="text-white font-black text-xl leading-tight mb-2">Founders&#x27; Day Celebration</h3>
+<h3 class="text-white font-black text-xl leading-tight mb-2">Founders' Day Celebration</h3>
 <div class="flex flex-wrap items-center gap-3 text-white/70 text-xs mb-3">
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUL 03</span>
+<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>JUL 03</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>8:00 AM</span>
+<i class="fa-solid fa-clock" aria-hidden="true"></i>8:00 AM</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>School Grounds</span>
+<i class="fa-solid fa-location-dot" aria-hidden="true"></i>School Grounds</span>
 </div>
-<button class="self-start flex items-center gap-1.5 bg-white text-[#0A2A66] font-black text-xs px-4 py-2 rounded-xl hover:bg-amber-400 hover:text-white transition-all shadow-lg">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Now</button>
 </div>
 <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/15 border border-white/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-white" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-up-right text-white" aria-hidden="true"></i>
 </div>
 </div>
 <div class="group relative rounded-3xl overflow-hidden cursor-pointer h-64 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
-<img src="assets/gallery/2L7A4666.JPG" alt="Science &amp; Innovation Fair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/culture-event.jpg" alt="Cultural Heritage Festival" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/88 via-black/30 to-transparent">
 </div>
 <div class="absolute top-4 left-4 flex gap-2">
-<span class="text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
+<span class="text-[10px] font-black px-2.5 py-1 rounded-full border bg-purple-100 text-purple-700 border-purple-200">Entertainment</span>
 <span class="text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">FEATURED</span>
 </div>
 <div class="absolute inset-0 p-5 flex flex-col justify-end">
-<h3 class="text-white font-black text-xl leading-tight mb-2">Science &amp; Innovation Fair</h3>
+<h3 class="text-white font-black text-xl leading-tight mb-2">Cultural Heritage Festival</h3>
 <div class="flex flex-wrap items-center gap-3 text-white/70 text-xs mb-3">
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>AUG 22</span>
+<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>AUG 09</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true">
-<circle cx="12" cy="12" r="10">
-</circle>
-<path d="M12 6v6l4 2">
-</path>
-</svg>9:00 AM</span>
+<i class="fa-solid fa-clock" aria-hidden="true"></i>10:00 AM</span>
 <span class="flex items-center gap-1">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Science Block</span>
+<i class="fa-solid fa-location-dot" aria-hidden="true"></i>School Hall</span>
 </div>
-<button class="self-start flex items-center gap-1.5 bg-white text-[#0A2A66] font-black text-xs px-4 py-2 rounded-xl hover:bg-amber-400 hover:text-white transition-all shadow-lg">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Now</button>
 </div>
 <div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/15 border border-white/25 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-white" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>
+<i class="fa-solid fa-arrow-up-right text-white" aria-hidden="true"></i>
 </div>
 </div>
 </div>
@@ -717,302 +275,86 @@
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/1.jpg" alt="Open Day &amp; Campus Tour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/Graduation.jpg" alt="Graduation Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
-<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
-<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">★ Featured</span>
+<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-amber-100 text-amber-700 border-amber-200">Graduation</span>
+<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">Featured</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Open Day &amp; Campus Tour</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Graduation Day</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUN 07, 2026 · 9:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUN 07, 2026 · 9:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Main Campus</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Main Campus</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Admin Office</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Admin Office</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>142 registered</span>
-<span class="">28% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:28%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/2.jpg" alt="Mid-Term Examinations Begin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/graduations.jpeg" alt="Christmas Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
-<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
+<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-purple-100 text-purple-700 border-purple-200">Entertainment</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Mid-Term Examinations Begin</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Christmas Celebration</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUN 14, 2026 · 7:30 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUN 14, 2026 · 7:30 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>All Classrooms</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>All Classrooms</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Exam Board</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Exam Board</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>1200 registered</span>
-<span class="text-red-500 font-bold">100% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-red-500" style="width:100%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/3.jpg" alt="Inter-School Debate Championship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/sports1.jpeg" alt="Football Champions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-green-100 text-green-700 border-green-200">Sports</span>
-<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">★ Featured</span>
+<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">Featured</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Inter-School Debate Championship</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Inter-School Football Match</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUN 21, 2026 · 10:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUN 21, 2026 · 10:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Assembly Hall</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Assembly Hall</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Student Affairs</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Student Affairs</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>89 registered</span>
-<span class="">30% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:30%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/4.JPG" alt="Founders&#x27; Day Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/founder-playingwithchild.jpeg" alt="Founders' Day Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-amber-100 text-amber-700 border-amber-200">Religious</span>
-<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">★ Featured</span>
+<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">â˜… Featured</span>
 </div>
 <div class="p-4">
 <h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Founders&#x27; Day Celebration</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUL 03, 2026 · 8:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUL 03, 2026 · 8:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>School Grounds</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>School Grounds</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Principal&#x27;s Office</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Principal&#x27;s Office</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>500 registered</span>
-<span class="">50% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:50%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/5.jpg" alt="Annual Sports Day 2026" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/sports3.jpeg" alt="Annual Sports Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-green-100 text-green-700 border-green-200">Sports</span>
@@ -1021,144 +363,36 @@
 <h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Annual Sports Day 2026</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUL 18, 2026 · 8:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUL 18, 2026 · 8:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Sports Field</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Sports Field</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By PE Department</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By PE Department</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>300 registered</span>
-<span class="">38% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:38%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/6.jpg" alt="Parent-Teacher Conference" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/certificate3.jpeg" alt="Awards Ceremony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Parent-Teacher Conference</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Awards Ceremony</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>JUL 25, 2026 · 9:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>JUL 25, 2026 · 9:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Classrooms</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Classrooms</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Admin Office</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Admin Office</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>430 registered</span>
-<span class="">72% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-amber-500" style="width:72%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/7.jpg" alt="Cultural Heritage Festival" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/culture-event.jpg" alt="Cultural Heritage Festival" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-purple-100 text-purple-700 border-purple-200">Entertainment</span>
@@ -1167,286 +401,70 @@
 <h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Cultural Heritage Festival</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>AUG 09, 2026 · 10:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>AUG 09, 2026 · 10:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>School Hall</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>School Hall</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Art Department</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Art Department</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>210 registered</span>
-<span class="">53% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:53%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/2L7A4666.JPG" alt="Science &amp; Innovation Fair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/worship1.jpeg" alt="Worship and Choir Assembly" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
+</div>
+<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-amber-100 text-amber-700 border-amber-200">Religious</span>
+<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">Featured</span>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Worship &amp; Choir Assembly</h3>
+<div class="space-y-1.5 mb-3">
+<div class="flex items-center gap-2 text-gray-400 text-xs">
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>AUG 22, 2026 · 9:00 AM</div>
+<div class="flex items-center gap-2 text-gray-400 text-xs">
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Science Block</div>
+<div class="flex items-center gap-2 text-gray-400 text-xs">
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Science Dept</div>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
+<div class="relative h-44 overflow-hidden">
+<img src="assets/gallery/0-level-trip.jpg" alt="O-Level Field Trip" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">Academic</span>
-<span class="absolute top-3 right-3 text-[10px] font-black bg-[#D62828] text-white px-2.5 py-1 rounded-full">★ Featured</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Science &amp; Innovation Fair</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">O-Level Field Trip</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>AUG 22, 2026 · 9:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>SEP 05, 2026 · 6:00 PM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Science Block</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Main Hall</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Science Dept</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Arts Club</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>67 registered</span>
-<span class="">34% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:34%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
 <div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/2L7A4732.jpg" alt="Talent Show &amp; Music Night" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
-</div>
-<span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-purple-100 text-purple-700 border-purple-200">Entertainment</span>
-</div>
-<div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Talent Show &amp; Music Night</h3>
-<div class="space-y-1.5 mb-3">
-<div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>SEP 05, 2026 · 6:00 PM</div>
-<div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Main Hall</div>
-<div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Arts Club</div>
-</div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>180 registered</span>
-<span class="">51% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:51%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
-</div>
-</div>
-<div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all cursor-pointer">
-<div class="relative h-44 overflow-hidden">
-<img src="assets/gallery/2L7A9171.jpg" alt="Community Service Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/school-trip.jpeg" alt="Airport Field Trip" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent">
 </div>
 <span class="absolute top-3 left-3 text-[10px] font-black px-2.5 py-1 rounded-full border bg-rose-100 text-rose-700 border-rose-200">Community</span>
 </div>
 <div class="p-4">
-<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Community Service Day</h3>
+<h3 class="font-bold text-[#0A2A66] text-sm mb-3 leading-snug group-hover:text-[#D62828] transition-colors">Airport Field Trip</h3>
 <div class="space-y-1.5 mb-3">
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days shrink-0" aria-hidden="true">
-<path d="M8 2v4">
-</path>
-<path d="M16 2v4">
-</path>
-<rect width="18" height="18" x="3" y="4" rx="2">
-</rect>
-<path d="M3 10h18">
-</path>
-<path d="M8 14h.01">
-</path>
-<path d="M12 14h.01">
-</path>
-<path d="M16 14h.01">
-</path>
-<path d="M8 18h.01">
-</path>
-<path d="M12 18h.01">
-</path>
-<path d="M16 18h.01">
-</path>
-</svg>SEP 19, 2026 · 7:00 AM</div>
+<i class="fa-solid fa-calendar-days shrink-0" aria-hidden="true"></i>SEP 19, 2026 · 7:00 AM</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin shrink-0" aria-hidden="true">
-<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-</path>
-<circle cx="12" cy="10" r="3">
-</circle>
-</svg>Local Community</div>
+<i class="fa-solid fa-location-dot shrink-0" aria-hidden="true"></i>Local Community</div>
 <div class="flex items-center gap-2 text-gray-400 text-xs">
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check shrink-0" aria-hidden="true">
-<path d="m16 11 2 2 4-4">
-</path>
-<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
-</path>
-<circle cx="9" cy="7" r="4">
-</circle>
-</svg>By Prefect Body</div>
+<i class="fa-solid fa-user-check shrink-0" aria-hidden="true"></i>By Prefect Body</div>
 </div>
-<div class="mt-2">
-<div class="flex justify-between text-xs text-gray-400 mb-1">
-<span>95 registered</span>
-<span class="">63% full</span>
-</div>
-<div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-<div class="h-full rounded-full transition-all bg-green-500" style="width:63%">
-</div>
-</div>
-</div>
-<button class="mt-4 w-full bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white text-xs font-black py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-all shadow-md">
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true">
-<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-</path>
-<path d="M13 5v2">
-</path>
-<path d="M13 17v2">
-</path>
-<path d="M13 11v2">
-</path>
-</svg>Register Free</button>
 </div>
 </div>
 </div>
@@ -1462,269 +480,110 @@
 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/1.jpg" alt="Graduation Ceremony 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/Graduation.jpg" alt="Graduation Ceremony 2022" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Graduation Ceremony 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">156 graduates</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">Graduation Ceremony 2022</h4>
+<p class="text-amber-400 text-[9px] font-bold">Class of 2022 procession</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">Nov 2025</span>
+<span class="text-white/50 text-[9px]">Nov 2022</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>120</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>120</div>
 </div>
 </div>
 </div>
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/7.jpg" alt="Science Fair 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/certificate1.jpeg" alt="National Exam Merit Awards" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Science Fair 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">32 projects</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">National Exam Merit Awards</h4>
+<p class="text-amber-400 text-[9px] font-bold">P6 excellence 2021/2022</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">Aug 2025</span>
+<span class="text-white/50 text-[9px]">Aug 2022</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>85</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>85</div>
 </div>
 </div>
 </div>
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/3.jpg" alt="Sports Day 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/sports1.jpeg" alt="Football Champions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Sports Day 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">18 medals won</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">Football Champions</h4>
+<p class="text-amber-400 text-[9px] font-bold">Team victory on the pitch</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">Jul 2025</span>
+<span class="text-white/50 text-[9px]">Jul 2023</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>200</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>200</div>
 </div>
 </div>
 </div>
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/5.jpg" alt="Cultural Day 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/culture-event.jpg" alt="Cultural Performance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Cultural Day 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">10 performances</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">Cultural Performance</h4>
+<p class="text-amber-400 text-[9px] font-bold">Traditional dance showcase</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">May 2025</span>
+<span class="text-white/50 text-[9px]">May 2023</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>95</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>95</div>
 </div>
 </div>
 </div>
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/2L7A4666.JPG" alt="Debate Championship 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/sports2.jpeg" alt="Trophy Celebration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Debate Championship 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">1st place trophy</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">Trophy Celebration</h4>
+<p class="text-amber-400 text-[9px] font-bold">Victory through teamwork</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">Apr 2025</span>
+<span class="text-white/50 text-[9px]">Apr 2023</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>60</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>60</div>
 </div>
 </div>
 </div>
 <div class="group rounded-2xl overflow-hidden cursor-pointer relative shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="aspect-[3/4] overflow-hidden">
-<img src="assets/gallery/4.JPG" alt="Founders&#x27; Day 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+<img src="assets/gallery/founder-playingwithchild.jpeg" alt="Founder's Legacy Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent">
 </div>
 <div class="absolute inset-0 p-3 flex flex-col justify-end">
-<h4 class="text-white font-bold text-xs leading-tight mb-1">Founders&#x27; Day 2025</h4>
-<p class="text-amber-400 text-[9px] font-bold">24th anniversary</p>
+<h4 class="text-white font-bold text-xs leading-tight mb-1">Founder's Legacy Day</h4>
+<p class="text-amber-400 text-[9px] font-bold">Rt. Rev. Kenneth Barham</p>
 <div class="flex items-center justify-between mt-1">
-<span class="text-white/50 text-[9px]">Jul 2025</span>
+<span class="text-white/50 text-[9px]">Jul 2022</span>
 <div class="flex items-center gap-1 text-white/50 text-[9px]">
-<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image" aria-hidden="true">
-<rect width="18" height="18" x="3" y="3" rx="2" ry="2">
-</rect>
-<circle cx="9" cy="9" r="2">
-</circle>
-<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21">
-</path>
-</svg>150</div>
+<i class="fa-solid fa-image" aria-hidden="true"></i>150</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<footer class="site-footer">
-<div class="site-footer__inner">
-<div class="site-footer__grid">
-<div>
-<div class="site-footer__brand">
-<div class="site-footer__logo">
-<img src="assets/st-logo.png" alt="ST Matthew&#x27;s School crest"/>
-</div>
-<div class="site-footer__name">ST MATTHEW&#x27;S SCHOOL</div>
-</div>
-<p class="site-footer__motto">&quot;The Fear of God is the Beginning of Knowledge&quot; Proverbs 1:7</p>
-<div class="contact-section__social">
-<a href="#" class="contact-social-btn" aria-label="Facebook">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2" aria-hidden="true">
-<circle cx="18" cy="5" r="3">
-</circle>
-<circle cx="6" cy="12" r="3">
-</circle>
-<circle cx="18" cy="19" r="3">
-</circle>
-<line x1="8.59" x2="15.42" y1="13.51" y2="17.49">
-</line>
-<line x1="15.41" x2="8.59" y1="6.51" y2="10.49">
-</line>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="Instagram">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera" aria-hidden="true">
-<path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
-</path>
-<circle cx="12" cy="13" r="3">
-</circle>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="YouTube">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true">
-<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
-</path>
-</svg>
-</a>
-<a href="#" class="contact-social-btn" aria-label="TikTok">
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2" aria-hidden="true">
-<circle cx="8" cy="18" r="4">
-</circle>
-<path d="M12 18V2l7 4">
-</path>
-</svg>
-</a>
-</div>
-</div>
-<div>
-<h4 class="site-footer__heading">Quick Links</h4>
-<ul class="site-footer__links">
-<li>
-<a href="index.html#admissions">Admissions</a>
-</li>
-<li>
-<a href="index.html#academics">Academics</a>
-</li>
-<li>
-<a href="gallery.html">Gallery</a>
-</li>
-<li>
-<a href="events.html">News &amp; Events</a>
-</li>
-<li>
-<a href="#">Staff Portal</a>
-</li>
-<li>
-<a href="#">Alumni</a>
-</li>
-</ul>
-</div>
-<div>
-<h4 class="site-footer__heading">Policies</h4>
-<ul class="site-footer__links">
-<li>
-<a href="#">School Rules</a>
-</li>
-<li>
-<a href="#">Dress Code</a>
-</li>
-<li>
-<a href="#">Privacy Policy</a>
-</li>
-<li>
-<a href="#">Child Protection</a>
-</li>
-<li>
-<a href="#">Anti-Bullying</a>
-</li>
-<li>
-<a href="#">Exam Policy</a>
-</li>
-</ul>
-</div>
-<div>
-<h4 class="site-footer__heading">Newsletter</h4>
-<p class="site-footer__newsletter-text">Get school news and updates delivered to your inbox.</p>
-<form class="site-footer__newsletter-form">
-<input type="email" placeholder="Enter your email" aria-label="Email for newsletter" value=""/>
-<button type="submit">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true">
-<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-</path>
-<path d="m21.854 2.147-10.94 10.939">
-</path>
-</svg>
-</button>
-</form>
-</div>
-</div>
-<div class="site-footer__bottom">
-<span>© 2026 ST Matthew&#x27;s School. All rights reserved.</span>
-<span>Crafted with care in Kigali, Rwanda <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart site-footer__bottom-heart inline" aria-hidden="true">
-<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
-</path>
-</svg>
-</span>
-</div>
-</div>
-</footer>
+<div id="site-footer"></div>
+<script src="js/includes.js" data-target="site-footer" data-file="Footer.html"></script>
 <style>
-@keyframes heroIn { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
-@keyframes ping { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.5} 50%{transform:translate(-50%,-50%) scale(1.15);opacity:.2} }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+@keyframes ping { 75%,100% { transform:scale(1.8); opacity:0; } }
+.animate-ping { animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite; }
 </style>
 </div>
 <script src="js/site.js" defer></script>
