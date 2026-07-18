@@ -83,31 +83,275 @@
     });
   });
 
-  document.querySelectorAll("[data-apply-open]").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const modal = document.getElementById("apply-modal");
-      if (modal) {
-        modal.classList.remove("hidden");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden";
-      }
-    });
-  });
-
   const applyModal = document.getElementById("apply-modal");
   if (applyModal) {
-    const backdrop = applyModal.querySelector("[aria-hidden=\"true\"]");
+    const form = applyModal.querySelector("[data-apply-form]");
+    const stepLabel = applyModal.querySelector("[data-apply-step-label]");
+    const statusEl = applyModal.querySelector("[data-apply-status]");
+    const summaryEl = applyModal.querySelector("[data-apply-summary]");
+    const backBtn = applyModal.querySelector("[data-apply-back]");
+    const nextBtn = applyModal.querySelector("[data-apply-next]");
+    const submitBtn = applyModal.querySelector("[data-apply-submit]");
+    const backdrop = applyModal.querySelector("[data-apply-backdrop]");
     const closeBtn = applyModal.querySelector('[aria-label="Close application form"]');
+    const panels = applyModal.querySelectorAll("[data-apply-panel]");
+    const dots = applyModal.querySelectorAll("[data-apply-dot]");
+    const bars = applyModal.querySelectorAll("[data-apply-bar]");
+    let currentStep = 1;
+    const totalSteps = 3;
+
+    const stepFields = {
+      1: ["studentName", "grade", "dob"],
+      2: ["parentName", "parentPhone", "parentEmail", "campus"],
+      3: ["consent"],
+    };
+
+    const setStatus = (message, ok) => {
+      if (!statusEl) return;
+      if (!message) {
+        statusEl.classList.add("hidden");
+        statusEl.textContent = "";
+        return;
+      }
+      statusEl.textContent = message;
+      statusEl.className =
+        "text-sm font-semibold rounded-xl px-4 py-3 mt-4 " +
+        (ok ? "bg-green-50 text-green-800" : "bg-red-50 text-red-700");
+      statusEl.classList.remove("hidden");
+    };
+
+    const getField = (name) => (form ? form.elements.namedItem(name) : null);
+
+    const fieldValue = (name) => {
+      const el = getField(name);
+      if (!el) return "";
+      if (el instanceof RadioNodeList) return String(el.value || "").trim();
+      if (el.type === "checkbox") return el.checked ? "yes" : "";
+      return String(el.value || "").trim();
+    };
+
+    const validateStep = (step) => {
+      const names = stepFields[step] || [];
+      for (const name of names) {
+        const el = getField(name);
+        if (!el) continue;
+        if (el.type === "checkbox") {
+          if (!el.checked) {
+            setStatus("Please confirm the consent checkbox to continue.", false);
+            el.focus();
+            return false;
+          }
+          continue;
+        }
+        const value = String(el.value || "").trim();
+        if (!value) {
+          setStatus("Please fill in all required fields.", false);
+          el.focus();
+          return false;
+        }
+        if (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          setStatus("Please enter a valid email address.", false);
+          el.focus();
+          return false;
+        }
+      }
+      setStatus("", false);
+      return true;
+    };
+
+    const updateSummary = () => {
+      if (!summaryEl) return;
+      const rows = [
+        ["Student", fieldValue("studentName")],
+        ["Grade", fieldValue("grade")],
+        ["Date of Birth", fieldValue("dob")],
+        ["Parent / Guardian", fieldValue("parentName")],
+        ["Phone", fieldValue("parentPhone")],
+        ["Email", fieldValue("parentEmail")],
+        ["Campus", fieldValue("campus")],
+      ];
+      summaryEl.innerHTML = rows
+        .map(
+          ([label, value]) =>
+            '<div class="flex justify-between gap-3">' +
+            '<dt class="text-gray-400 font-medium shrink-0">' +
+            label +
+            "</dt>" +
+            '<dd class="text-[#0A2A66] font-semibold text-right">' +
+            (value || "—") +
+            "</dd></div>"
+        )
+        .join("");
+    };
+
+    const showStep = (step) => {
+      currentStep = Math.max(1, Math.min(totalSteps, step));
+      panels.forEach((panel) => {
+        const n = Number(panel.getAttribute("data-apply-panel"));
+        panel.classList.toggle("hidden", n !== currentStep);
+      });
+      dots.forEach((dot) => {
+        const n = Number(dot.getAttribute("data-apply-dot"));
+        const active = n === currentStep;
+        const done = n < currentStep;
+        dot.className =
+          "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 " +
+          (active
+            ? "bg-[#D62828] text-white ring-2 ring-white/30"
+            : done
+              ? "bg-white text-[#0A2A66]"
+              : "bg-white/15 text-white/40");
+      });
+      bars.forEach((bar) => {
+        const n = Number(bar.getAttribute("data-apply-bar"));
+        bar.className =
+          "h-0.5 flex-1 rounded-full transition-all " +
+          (n < currentStep ? "bg-white/70" : "bg-white/15");
+      });
+      if (stepLabel) {
+        stepLabel.textContent = "Admissions 2026/27 · Step " + currentStep + " of " + totalSteps;
+      }
+      if (backBtn) backBtn.classList.toggle("hidden", currentStep === 1);
+      if (nextBtn) nextBtn.classList.toggle("hidden", currentStep === totalSteps);
+      if (submitBtn) {
+        submitBtn.classList.toggle("hidden", currentStep !== totalSteps);
+        if (currentStep === totalSteps) submitBtn.classList.add("flex");
+        else submitBtn.classList.remove("flex");
+      }
+      if (currentStep === totalSteps) updateSummary();
+    };
+
+    const open = () => {
+      if (form) form.reset();
+      setStatus("", false);
+      showStep(1);
+      applyModal.classList.remove("hidden");
+      applyModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      getField("studentName")?.focus();
+    };
+
     const close = () => {
       applyModal.classList.add("hidden");
       applyModal.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
     };
+
+    document.querySelectorAll("[data-apply-open]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        open();
+      });
+    });
+
     if (backdrop) backdrop.addEventListener("click", close);
     if (closeBtn) closeBtn.addEventListener("click", close);
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && !applyModal.classList.contains("hidden")) close();
+    });
+
+    if (backBtn) {
+      backBtn.addEventListener("click", () => {
+        setStatus("", false);
+        showStep(currentStep - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        if (!validateStep(currentStep)) return;
+        showStep(currentStep + 1);
+      });
+    }
+
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!validateStep(1)) {
+          showStep(1);
+          return;
+        }
+        if (!validateStep(2)) {
+          showStep(2);
+          return;
+        }
+        if (!validateStep(3)) {
+          showStep(3);
+          return;
+        }
+        const studentName = fieldValue("studentName");
+        const grade = fieldValue("grade");
+        const dob = fieldValue("dob");
+        const parentName = fieldValue("parentName");
+        const parentPhone = fieldValue("parentPhone");
+        const parentEmail = fieldValue("parentEmail");
+        const campus = fieldValue("campus");
+        const mailSubject = encodeURIComponent(
+          "[ST Matthew's] Online Application — " + studentName + " (" + grade + ")"
+        );
+        const body = encodeURIComponent(
+          "ONLINE APPLICATION — Admissions 2026/27\n\n" +
+            "STUDENT\n" +
+            "Full Name: " + studentName + "\n" +
+            "Grade Applying For: " + grade + "\n" +
+            "Date of Birth: " + dob + "\n\n" +
+            "PARENT / GUARDIAN\n" +
+            "Name: " + parentName + "\n" +
+            "Phone: " + parentPhone + "\n" +
+            "Email: " + parentEmail + "\n" +
+            "Preferred Campus: " + campus + "\n\n" +
+            "Consent: Confirmed"
+        );
+        window.location.href =
+          "mailto:collegestmatthews@gmail.com?subject=" + mailSubject + "&body=" + body;
+        setStatus("Opening your email app — send the message to complete your application.", true);
+      });
+    }
+
+    showStep(1);
+  } else {
+    document.querySelectorAll("[data-apply-open]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    });
+  }
+
+  const levelModal = document.getElementById("level-modal");
+  if (levelModal) {
+    const panels = levelModal.querySelectorAll("[data-level-panel]");
+    const openLevel = (key) => {
+      const id = String(key || "").toLowerCase();
+      if (!["nursery", "primary", "secondary"].includes(id)) return;
+      panels.forEach((panel) => {
+        panel.classList.toggle("hidden", panel.getAttribute("data-level-panel") !== id);
+      });
+      levelModal.classList.remove("hidden");
+      levelModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
+    const closeLevel = () => {
+      levelModal.classList.add("hidden");
+      levelModal.setAttribute("aria-hidden", "true");
+      if (!document.getElementById("apply-modal") || document.getElementById("apply-modal").classList.contains("hidden")) {
+        document.body.style.overflow = "";
+      }
+    };
+
+    document.querySelectorAll("[data-level-open]").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openLevel(el.getAttribute("data-level-open"));
+      });
+    });
+
+    levelModal.querySelectorAll("[data-level-close]").forEach((el) => {
+      el.addEventListener("click", () => closeLevel());
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !levelModal.classList.contains("hidden")) closeLevel();
     });
   }
 
@@ -489,7 +733,7 @@
 
     function showBranch(i) {
       const idx = String(i);
-      const colors = ["#0A2A66", "#f59e0b", "#0A2A66", "#f59e0b"];
+      const colors = ["#0A2A66", "#0A2A66", "#0A2A66", "#0A2A66"];
       document.querySelectorAll("[data-branch-panel]").forEach((p) => {
         p.classList.toggle("hidden", p.getAttribute("data-branch-panel") !== idx);
       });

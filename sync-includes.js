@@ -1,8 +1,9 @@
 /* Regenerate js/include-fallback.js after editing Header.html or Footer.html */
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const root = __dirname;
+const root = path.dirname(fileURLToPath(import.meta.url));
 const files = ["Header.html", "Footer.html"];
 const out = {};
 

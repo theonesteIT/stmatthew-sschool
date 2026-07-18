@@ -70,9 +70,9 @@ About
 </div>
 </nav>
 <div id="apply-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 hidden" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title" aria-hidden="true">
-<div class="absolute inset-0 bg-[#07193d]/70 backdrop-blur-sm" aria-hidden="true">
-</div>
+<div class="absolute inset-0 bg-[#07193d]/70 backdrop-blur-sm" data-apply-backdrop aria-hidden="true"></div>
 <div class="relative w-full max-w-lg max-h-[90vh] flex flex-col bg-white rounded-3xl shadow-2xl shadow-[#0A2A66]/20 border border-gray-100 overflow-hidden">
+<form data-apply-form novalidate class="flex flex-col max-h-[90vh] min-h-0">
 <div class="shrink-0 bg-gradient-to-r from-[#0A2A66] to-[#163580] px-6 py-5">
 <div class="flex items-start justify-between gap-4">
 <div>
@@ -80,37 +80,36 @@ About
 <i class="fa-solid fa-graduation-cap text-white/90" aria-hidden="true"></i>
 <h3 id="apply-modal-title" class="text-white font-bold text-lg">Online Application</h3>
 </div>
-<p class="text-white/55 text-xs">Admissions 2026/27 · Step 1 of 3</p>
+<p class="text-white/55 text-xs" data-apply-step-label>Admissions 2026/27 · Step 1 of 3</p>
 </div>
 <button type="button" class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors shrink-0" aria-label="Close application form">
 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
 </button>
 </div>
-<div class="flex items-center gap-2 mt-4">
+<div class="flex items-center gap-2 mt-4" aria-hidden="true">
 <div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-[#D62828] text-white ring-2 ring-white/30">1</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
-</div>
-</div>
-<div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">2</div>
-<div class="h-0.5 flex-1 rounded-full transition-all bg-white/15">
-</div>
+<div data-apply-dot="1" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-[#D62828] text-white ring-2 ring-white/30">1</div>
+<div data-apply-bar="1" class="h-0.5 flex-1 rounded-full transition-all bg-white/15"></div>
 </div>
 <div class="flex items-center gap-2 flex-1">
-<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">3</div>
+<div data-apply-dot="2" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">2</div>
+<div data-apply-bar="2" class="h-0.5 flex-1 rounded-full transition-all bg-white/15"></div>
+</div>
+<div class="flex items-center gap-2 flex-1">
+<div data-apply-dot="3" class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all shrink-0 bg-white/15 text-white/40">3</div>
 </div>
 </div>
 </div>
-<div class="flex-1 overflow-y-auto p-6 space-y-4">
+<div class="flex-1 overflow-y-auto p-6 min-h-0">
+<div data-apply-panel="1" class="space-y-4">
 <div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Student Full Name</label>
-<input class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. Alice Uwimana" value=""/>
+<label for="apply-student-name" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Student Full Name</label>
+<input id="apply-student-name" name="studentName" required autocomplete="name" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. Alice Uwimana"/>
 </div>
 <div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Grade Applying For</label>
-<select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all text-gray-600">
-<option value="" selected="">Select grade...</option>
+<label for="apply-grade" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Grade Applying For</label>
+<select id="apply-grade" name="grade" required class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all text-gray-600">
+<option value="" selected>Select grade...</option>
 <option value="Nursery">Nursery</option>
 <option value="Primary 1">Primary 1</option>
 <option value="Primary 2">Primary 2</option>
@@ -124,13 +123,53 @@ About
 </select>
 </div>
 <div>
-<label class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Date of Birth</label>
-<input type="date" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all" value=""/>
+<label for="apply-dob" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Date of Birth</label>
+<input id="apply-dob" name="dob" type="date" required class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all"/>
 </div>
+</div>
+<div data-apply-panel="2" class="space-y-4 hidden">
+<div>
+<label for="apply-parent-name" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Parent / Guardian Name</label>
+<input id="apply-parent-name" name="parentName" required autocomplete="name" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. Jean Baptiste"/>
+</div>
+<div>
+<label for="apply-parent-phone" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Phone Number</label>
+<input id="apply-parent-phone" name="parentPhone" type="tel" required autocomplete="tel" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. +250 788 000 000"/>
+</div>
+<div>
+<label for="apply-parent-email" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Email Address</label>
+<input id="apply-parent-email" name="parentEmail" type="email" required autocomplete="email" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] focus:ring-2 focus:ring-[#0A2A66]/10 transition-all" placeholder="e.g. parent@email.com"/>
+</div>
+<div>
+<label for="apply-campus" class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1.5">Preferred Campus</label>
+<select id="apply-campus" name="campus" required class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#0A2A66] transition-all text-gray-600">
+<option value="" selected>Select campus...</option>
+<option value="Kamembe · Main Campus">Kamembe · Main Campus</option>
+<option value="Tyazo Campus">Tyazo Campus</option>
+<option value="Ntendezi Campus">Ntendezi Campus</option>
+<option value="Gashonga Campus">Gashonga Campus</option>
+</select>
+</div>
+</div>
+<div data-apply-panel="3" class="space-y-4 hidden">
+<div class="rounded-2xl border border-gray-100 bg-[#F5F7FA] p-4 space-y-3">
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Application Summary</p>
+<dl data-apply-summary class="space-y-2 text-sm"></dl>
+</div>
+<label class="flex items-start gap-3 cursor-pointer group">
+<input id="apply-consent" name="consent" type="checkbox" required class="mt-1 w-4 h-4 rounded border-gray-300 text-[#0A2A66] focus:ring-[#0A2A66]"/>
+<span class="text-sm text-gray-600 leading-relaxed group-hover:text-gray-800">I confirm that the information provided is accurate and I consent to ST Matthew&#x27;s Schools contacting me about this application.</span>
+</label>
+</div>
+<p data-apply-status class="hidden text-sm font-semibold rounded-xl px-4 py-3 mt-4" role="status" aria-live="polite"></p>
 </div>
 <div class="shrink-0 flex gap-3 p-6 pt-4 border-t border-gray-100 bg-white">
-<button type="button" class="flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-bold py-3 rounded-xl text-sm shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 transition-all">Next Step <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+<button type="button" data-apply-back class="hidden w-12 h-12 rounded-xl border border-gray-200 text-gray-500 hover:border-[#0A2A66] hover:text-[#0A2A66] transition-all flex items-center justify-center shrink-0" aria-label="Previous step">
+<i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
 </button>
+<button type="button" data-apply-next class="flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-bold py-3 rounded-xl text-sm shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 transition-all">Next Step <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+<button type="submit" data-apply-submit class="hidden flex-1 bg-gradient-to-r from-[#0A2A66] to-[#163580] text-white font-bold py-3 rounded-xl text-sm shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 hover:opacity-90 transition-all"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Submit Application</button>
 </div>
+</form>
 </div>
 </div>
