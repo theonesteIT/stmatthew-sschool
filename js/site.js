@@ -763,4 +763,24 @@
       el.classList.add("opacity-100", "translate-y-0");
     });
   }
+
+  const policyNavLinks = document.querySelectorAll("[data-policy-nav]");
+  const policySections = document.querySelectorAll("[data-policy-section]");
+  if (policyNavLinks.length && policySections.length) {
+    const setActivePolicy = (id) => {
+      policyNavLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.getAttribute("data-policy-nav") === id);
+      });
+    };
+    const onPolicyScroll = () => {
+      let current = policySections[0]?.getAttribute("data-policy-section") || "";
+      policySections.forEach((section) => {
+        const top = section.getBoundingClientRect().top;
+        if (top <= 160) current = section.getAttribute("data-policy-section") || current;
+      });
+      if (current) setActivePolicy(current);
+    };
+    window.addEventListener("scroll", onPolicyScroll, { passive: true });
+    onPolicyScroll();
+  }
 })();
